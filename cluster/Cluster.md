@@ -60,6 +60,57 @@ du -a | cut -d/ -f2 | sort | uniq -c | sort -nr
 ```
 
 
+## Singularity
+
+Debugging:
+```shell
+singularity exec docker://bitnami/zookeeper:latest bash
+
+singularity instance list
+
+ps aux | grep singularity
+```
+
+Start VirnyFlow cluster:
+```shell
+singularity exec \
+    --bind ./tmp/zookeeper-data:/opt/bitnami/zookeeper/data \
+    --bind ./tmp/zookeeper-logs:/opt/bitnami/zookeeper/logs \
+    --bind ./tmp/zookeeper-data/zoo.cfg:/opt/bitnami/zookeeper/conf/zoo.cfg \
+    docker://bitnami/zookeeper:latest \
+    sh -c "ALLOW_ANONYMOUS_LOGIN=yes && /opt/bitnami/zookeeper/bin/zkServer.sh start" > /dev/null 2>&1 &
+    
+ps aux | grep zoo
+
+tail -f /proc/1148307/fd/1
+
+           
+singularity exec \
+    --bind ./tmp/kafka-data:/opt/bitnami/kafka/data \
+    --bind ./tmp/kafka-logs:/opt/bitnami/kafka/logs \
+    --bind ./tmp/kafka-data/server.properties:/opt/bitnami/kafka/config/server.properties \
+    docker://bitnami/kafka:latest \
+    sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties" > /dev/null 2>&1 &
+    
+ps aux | grep kafka
+
+
+singularity exec \
+    docker://confluentinc/cp-kafka:6.1.1 \
+    sh -c "
+      kafka-topics --bootstrap-server localhost:9092 --list && \
+      kafka-topics --bootstrap-server localhost:9092 --create --if-not-exists --topic NewTasksQueue --replication-factor 1 --partitions 10 && \
+      kafka-topics --bootstrap-server localhost:9092 --create --if-not-exists --topic CompletedTasksQueue --replication-factor 1 --partitions 10 && \
+      kafka-topics --bootstrap-server localhost:9092 --list
+    "
+    
+singularity exec --overlay /scratch/dh3553/virny_flow_project/vldb_sds_env.ext3:ro /scratch/work/public/singularity/ubuntu-20.04.1.sif /bin/bash
+
+Singularity> source /ext3/env.sh
+```
+
+
+
 ## Setup
 
 Configurate dependencies on the cluster ([ref](https://sites.google.com/nyu.edu/nyu-hpc/hpc-systems/greene/software/singularity-with-miniconda)):

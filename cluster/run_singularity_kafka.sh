@@ -12,8 +12,11 @@ KAFKA_PORT2=9093
 # Step 1: Start Zookeeper
 echo "Starting Zookeeper..."
 singularity exec \
+    --bind ./tmp/zookeeper-data:/opt/bitnami/zookeeper/data \
+    --bind ./tmp/zookeeper-logs:/opt/bitnami/zookeeper/logs \
+    --bind ./tmp/zookeeper-data/zoo.cfg:/opt/bitnami/zookeeper/conf/zoo.cfg \
     $ZOOKEEPER_IMAGE \
-    sh -c "ALLOW_ANONYMOUS_LOGIN=yes && zookeeper-server-start.sh" &
+    sh -c "ALLOW_ANONYMOUS_LOGIN=yes && /opt/bitnami/zookeeper/bin/zkServer.sh start" > /dev/null 2>&1 &
 
 # Wait for Zookeeper to start
 echo "Waiting for Zookeeper to initialize..."
@@ -22,16 +25,11 @@ sleep 20
 # Step 2: Start Kafka Broker
 echo "Starting Kafka Broker..."
 singularity exec \
+    --bind ./tmp/kafka-data:/opt/bitnami/kafka/data \
+    --bind ./tmp/kafka-logs:/opt/bitnami/kafka/logs \
+    --bind ./tmp/kafka-data/server.properties:/opt/bitnami/kafka/config/server.properties \
     $KAFKA_IMAGE \
-    sh -c "KAFKA_CFG_BROKER_ID=1 \
-           KAFKA_CFG_ZOOKEEPER_CONNECT=localhost:$ZOOKEEPER_PORT \
-           KAFKA_CFG_LISTENERS=PLAINTEXT_INTERNAL://0.0.0.0:$KAFKA_PORT1,PLAINTEXT_EXTERNAL://0.0.0.0:$KAFKA_PORT2 \
-           KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT_INTERNAL://kafka_broker:$KAFKA_PORT1,PLAINTEXT_EXTERNAL://localhost:$KAFKA_PORT2 \
-           KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=PLAINTEXT_INTERNAL:PLAINTEXT,PLAINTEXT_EXTERNAL:PLAINTEXT \
-           KAFKA_CFG_INTER_BROKER_LISTENER_NAME=PLAINTEXT_INTERNAL \
-           KAFKA_CFG_GROUP_MIN_SESSION_TIMEOUT_MS=6000 \
-           KAFKA_CFG_GROUP_MAX_SESSION_TIMEOUT_MS=60000 \
-           ALLOW_PLAINTEXT_LISTENER=yes && kafka-server-start.sh" &
+    sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties" > /dev/null 2>&1 &
 
 # Wait for Kafka to start
 echo "Waiting for Kafka Broker to initialize..."
