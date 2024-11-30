@@ -78,11 +78,11 @@ singularity exec \
     --bind ./tmp/zookeeper-logs:/opt/bitnami/zookeeper/logs \
     --bind ./tmp/zookeeper-data/zoo.cfg:/opt/bitnami/zookeeper/conf/zoo.cfg \
     docker://bitnami/zookeeper:latest \
-    sh -c "ALLOW_ANONYMOUS_LOGIN=yes && /opt/bitnami/zookeeper/bin/zkServer.sh start" > /dev/null 2>&1 &
+    sh -c "ALLOW_ANONYMOUS_LOGIN=yes && /opt/bitnami/zookeeper/bin/zkServer.sh start"
     
 ps aux | grep zoo
 
-tail -f /proc/3725162/fd/1
+tail -f /proc/3877768/fd/1
 
            
 singularity exec \

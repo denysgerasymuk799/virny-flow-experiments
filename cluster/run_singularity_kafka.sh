@@ -27,9 +27,8 @@ echo "Starting Kafka Broker..."
 singularity exec \
     --bind ./tmp/kafka-data:/opt/bitnami/kafka/data \
     --bind ./tmp/kafka-logs:/opt/bitnami/kafka/logs \
-    --bind ./tmp/kafka-data/server.properties:/opt/bitnami/kafka/config/server.properties \
     $KAFKA_IMAGE \
-    sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties" > /dev/null 2>&1 &
+    sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties.original" > /dev/null 2>&1 &
 
 # Wait for Kafka to start
 echo "Waiting for Kafka Broker to initialize..."
@@ -43,7 +42,7 @@ singularity exec \
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --list && \
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --create --if-not-exists --topic NewTasksQueue --replication-factor 1 --partitions 10 && \
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --create --if-not-exists --topic CompletedTasksQueue --replication-factor 1 --partitions 10 && \
-      echo -e '\nSuccessfully created the following topics:' \
+      echo -e '\nSuccessfully created the following topics:' && \
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --list
     "
 
