@@ -101,9 +101,9 @@ pip --version
 pip install -r /home/dh3553/projects/virny-flow-experiments/requirements.txt
 
 # https://stackoverflow.com/questions/54249577/importerror-libcuda-so-1-cannot-open-shared-object-file
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.0/compat
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.1/compat
 
 exit
 
-
+mv ./overlay-15GB-500K.ext3 ./vldb_sds_env.ext3
 ```
