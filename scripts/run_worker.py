@@ -4,7 +4,7 @@ from virny_flow.user_interfaces.worker_interface import worker_interface
 from virny_flow.configs.component_configs import (NULL_IMPUTATION_CONFIG, FAIRNESS_INTERVENTION_CONFIG_SPACE,
                                                   get_models_params_for_tuning)
 
-from virny_flow_demo.configs.datasets_config import DATASET_CONFIG
+from configs.datasets_config import DATASET_CONFIG
 
 
 if __name__ == '__main__':

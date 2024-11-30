@@ -4,7 +4,7 @@ from virny.custom_classes.metrics_interactive_visualizer import MetricsInteracti
 
 from virny_flow.core.utils.common_helpers import create_exp_config_obj
 from virny_flow.visualizations.viz_utils import prepare_metrics_for_virnyview
-from virny_flow_demo.configs.datasets_config import DATASET_CONFIG
+from configs.datasets_config import DATASET_CONFIG
 
 
 if __name__ == '__main__':
