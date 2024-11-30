@@ -20,7 +20,7 @@ singularity exec \
 
 # Wait for Zookeeper to start
 echo "Waiting for Zookeeper to initialize..."
-sleep 10
+sleep 20
 
 # Step 2: Start Kafka Broker
 echo "Starting Kafka Broker..."
