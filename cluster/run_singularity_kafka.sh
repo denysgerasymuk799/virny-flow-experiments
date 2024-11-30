@@ -20,7 +20,7 @@ singularity exec \
 
 # Wait for Zookeeper to start
 echo "Waiting for Zookeeper to initialize..."
-sleep 20
+sleep 10
 
 # Step 2: Start Kafka Broker
 echo "Starting Kafka Broker..."
@@ -43,6 +43,7 @@ singularity exec \
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --list && \
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --create --if-not-exists --topic NewTasksQueue --replication-factor 1 --partitions 10 && \
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --create --if-not-exists --topic CompletedTasksQueue --replication-factor 1 --partitions 10 && \
+      echo -e '\nSuccessfully created the following topics:' \
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --list
     "
 
