@@ -12,7 +12,6 @@ KAFKA_PORT2=9093
 # Step 1: Start Zookeeper
 echo "Starting Zookeeper..."
 singularity exec \
-    --bind /tmp/zookeeper-data:/zookeeper-data \
     $ZOOKEEPER_IMAGE \
     sh -c "ALLOW_ANONYMOUS_LOGIN=yes && zookeeper-server-start.sh" &
 
@@ -23,7 +22,6 @@ sleep 20
 # Step 2: Start Kafka Broker
 echo "Starting Kafka Broker..."
 singularity exec \
-    --bind /tmp/kafka-data:/kafka-data \
     $KAFKA_IMAGE \
     sh -c "KAFKA_CFG_BROKER_ID=1 \
            KAFKA_CFG_ZOOKEEPER_CONNECT=localhost:$ZOOKEEPER_PORT \
