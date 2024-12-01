@@ -11,7 +11,9 @@
 
 module purge
 
+bash ../cluster/run_singularity_kafka.sh
+
 singularity exec \
 	    --overlay /scratch/dh3553/virny_flow_project/vldb_sds_env.ext3:ro \
 	    /scratch/work/public/singularity/ubuntu-20.04.1.sif \
-	    /bin/bash -c "bash ../cluster/run_singularity_kafka.sh && source /ext3/env.sh; bash ../cluster/run_virny_flow_cluster.sh 4"
+	    /bin/bash -c "source /ext3/env.sh; bash ../cluster/run_virny_flow_cluster.sh 4"
