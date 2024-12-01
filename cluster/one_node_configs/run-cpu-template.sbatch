@@ -8,8 +8,8 @@
 EXP_CONFIG_NAME=german_experiments6
 NUM_WORKERS=4
 CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
-CPUS=12
-MEM=32GB
+CPUS=24
+MEM=48GB
 EMAIL=dh3553
 SESSION=$(date "+%Y_%m_%d__%H_%M_%S")
 
