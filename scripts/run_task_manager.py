@@ -21,7 +21,8 @@ if __name__ == "__main__":
 
     # Read an experimental config
     exp_config_yaml_path = args.exp_config_yaml_path
-    print('args.exp_config_yaml_path:', args.exp_config_yaml_path)
+    print('args.exp_config_yaml_path:', args.exp_config_yaml_path, flush=True)
+    print('exp_config_yaml_path:', exp_config_yaml_path, flush=True)
     exp_config = create_exp_config_obj(exp_config_yaml_path=exp_config_yaml_path)
 
     task_manager = TaskManager(secrets_path=exp_config.secrets_path,
