@@ -25,10 +25,9 @@ sleep 20
 # Step 2: Start Kafka Broker
 echo "Starting Kafka Broker..."
 singularity exec \
-    --bind ./tmp/kafka-data:/opt/bitnami/kafka/data \
-    --bind ./tmp/kafka-logs:/opt/bitnami/kafka/logs \
+    --bind ../cluster/server.properties:/opt/bitnami/kafka/config/server.properties \
     $KAFKA_IMAGE \
-    sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties.original" > /dev/null 2>&1 &
+    sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties" > ./kafka-broker.txt 2>&1 &
 
 # Wait for Kafka to start
 echo "Waiting for Kafka Broker to initialize..."

@@ -86,7 +86,7 @@ tail -f /proc/1603732/fd/1
 
            
 singularity exec \
-    --bind ./tmp/kafka-data/server.properties:/opt/bitnami/kafka/config/server.properties \
+    --bind ../cluster/server.properties:/opt/bitnami/kafka/config/server.properties \
     docker://bitnami/kafka:latest \
     sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties" > /dev/null 2>&1 &
     
