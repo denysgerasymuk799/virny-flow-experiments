@@ -8,7 +8,3 @@ rm -f ./worker_*
 
 echo "Cleaning Singularity cache..."
 singularity cache clean
-
-echo "Stopping and removing instances..."
-singularity instance stop --all
-singularity instance clean

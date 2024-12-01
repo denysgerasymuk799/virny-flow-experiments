@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # Define variables
+NUM_WORKERS=$1
+SESSION=$2
+
 ZOOKEEPER_IMAGE="docker://bitnami/zookeeper:latest"
 KAFKA_IMAGE="docker://bitnami/kafka:latest"
 INIT_IMAGE="docker://confluentinc/cp-kafka:6.1.1"
@@ -28,7 +31,7 @@ singularity exec \
     --bind ./tmp/kafka-logs:/tmp/kafka-logs \
     --bind ../cluster/server.properties:/opt/bitnami/kafka/config/server.properties \
     $KAFKA_IMAGE \
-    sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties" > ./kafka-broker.log 2>&1 &
+    sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties" > ./$SESSION/kafka-broker.log 2>&1 &
 
 # Wait for Kafka to start
 echo "Waiting for Kafka Broker to initialize..."
@@ -40,8 +43,8 @@ singularity exec \
     $INIT_IMAGE \
     sh -c "
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --list && \
-      kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --create --if-not-exists --topic NewTasksQueue --replication-factor 1 --partitions 10 && \
-      kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --create --if-not-exists --topic CompletedTasksQueue --replication-factor 1 --partitions 10 && \
+      kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --create --if-not-exists --topic NewTasksQueue --replication-factor 1 --partitions $NUM_WORKERS && \
+      kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --create --if-not-exists --topic CompletedTasksQueue --replication-factor 1 --partitions $NUM_WORKERS && \
       echo -e '\nSuccessfully created the following topics:' && \
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --list
     "

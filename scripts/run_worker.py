@@ -1,4 +1,15 @@
-import pathlib
+import sys
+import argparse
+import warnings
+from pathlib import Path
+
+# Suppress all warnings
+warnings.filterwarnings("ignore")
+
+# Define a correct root path
+sys.path.append(str(Path(f"{__file__}").parent.parent))
+
+
 from virny_flow.core.utils.common_helpers import create_exp_config_obj
 from virny_flow.user_interfaces.worker_interface import worker_interface
 from virny_flow.configs.component_configs import (NULL_IMPUTATION_CONFIG, FAIRNESS_INTERVENTION_CONFIG_SPACE,
@@ -8,8 +19,13 @@ from configs.datasets_config import DATASET_CONFIG
 
 
 if __name__ == '__main__':
+    # Parse the arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--exp_config_yaml_path", type=str, required=True, help="Path to experiment config file")
+    args = parser.parse_args()
+
     # Read an experimental config
-    exp_config_yaml_path = pathlib.Path(__file__).parent.joinpath('configs').joinpath('exp_config.yaml')
+    exp_config_yaml_path = args.exp_config_yaml_path
     exp_config = create_exp_config_obj(exp_config_yaml_path=exp_config_yaml_path)
 
     worker_interface(exp_config=exp_config,
