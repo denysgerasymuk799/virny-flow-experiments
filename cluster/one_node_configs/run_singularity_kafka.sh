@@ -19,35 +19,41 @@ singularity pull zookeeper.sif $ZOOKEEPER_IMAGE
 echo "Downloading Kafka image..."
 singularity pull kafka.sif $KAFKA_IMAGE
 
+echo "Downloading Confluent Kafka image with utils..."
+singularity pull confluent-kafka.sif $INIT_IMAGE
+
+
 # Step 2: Start Zookeeper
 echo "Starting Zookeeper..."
 singularity exec \
     --bind ./$SESSION/tmp/zookeeper-data:/opt/bitnami/zookeeper/data \
     --bind ./$SESSION/tmp/zookeeper-logs:/opt/bitnami/zookeeper/logs \
     --bind ../cluster/zoo.cfg:/opt/bitnami/zookeeper/conf/zoo.cfg \
-    $ZOOKEEPER_IMAGE \
+    zookeeper.sif \
     sh -c "ALLOW_ANONYMOUS_LOGIN=yes && /opt/bitnami/zookeeper/bin/zkServer.sh start" > ./$SESSION/zookeeper.log 2>&1 &
 
 # Wait for Zookeeper to start
 echo "Waiting for Zookeeper to initialize..."
 sleep 20
 
+
 # Step 3: Start Kafka Broker
 echo "Starting Kafka Broker..."
 singularity exec \
     --bind ./$SESSION/tmp/kafka-logs:/tmp/kafka-logs \
     --bind ../cluster/server.properties:/opt/bitnami/kafka/config/server.properties \
-    $KAFKA_IMAGE \
+    kafka.sif \
     sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties" > ./$SESSION/kafka-broker.log 2>&1 &
 
 # Wait for Kafka to start
 echo "Waiting for Kafka Broker to initialize..."
 sleep 30
 
+
 # Step 4: Initialize Kafka Topics
 echo "Initializing Kafka Topics..."
 singularity exec \
-    $INIT_IMAGE \
+    confluent-kafka.sif \
     sh -c "
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --list && \
       kafka-topics --bootstrap-server localhost:$KAFKA_PORT1 --create --if-not-exists --topic NewTasksQueue --replication-factor 1 --partitions $NUM_WORKERS && \
