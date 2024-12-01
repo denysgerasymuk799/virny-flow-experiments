@@ -1,7 +1,7 @@
 import pathlib
 
 from virny.datasets import DiabetesDataset2019
-from virny_flow_demo.configs.data_loaders import GermanCreditDataset
+from scripts.configs.data_loaders import GermanCreditDataset
 
 
 DATASET_CONFIG = {
