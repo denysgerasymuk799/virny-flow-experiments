@@ -5,11 +5,11 @@
 # ====================================================================================
 # Default parameters
 # ====================================================================================
-EXP_CONFIG_NAME=german_experiments6
-NUM_WORKERS=4
+EXP_CONFIG_NAME=german_experiments7
+NUM_WORKERS=3
 CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
-CPUS=24
-MEM=48GB
+CPUS=12
+MEM=32GB
 EMAIL=dh3553
 SESSION=$(date "+%Y_%m_%d__%H_%M_%S")
 
@@ -46,16 +46,16 @@ dataset: "german"
 sensitive_attrs_for_intervention: ["sex"]
 null_imputers: ["miss_forest"]
 fairness_interventions: ["DIR"]
-models: ["dt_clf", "lr_clf"]
+models: ["dt_clf"]
 run_nums: [1, 2]
 secrets_path: "/home/$EMAIL/projects/virny-flow-experiments/scripts/configs/secrets.env"
 
 # Parameters for optimisation
 ref_point: [0.20, 0.10]
 objectives:
-  - { name: "objective_1", metric: "F1", group: "overall", weight: 0.25 }
-  - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "sex", weight: 0.75 }
-max_trials: 5
+  - { name: "objective_1", metric: "F1", group: "overall", weight: 0.5 }
+  - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "sex", weight: 0.5 }
+max_trials: 3
 num_workers: $NUM_WORKERS
 num_pp_candidates: 2
 training_set_fractions_for_halting: [0.5, 0.75, 1.0]
