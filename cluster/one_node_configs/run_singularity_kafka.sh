@@ -12,7 +12,14 @@ ZOOKEEPER_PORT=2181
 KAFKA_PORT1=9092
 KAFKA_PORT2=9093
 
-# Step 1: Start Zookeeper
+# Step 1: Download all images
+echo "Downloading Zookeeper image..."
+singularity pull zookeeper.sif $ZOOKEEPER_IMAGE
+
+echo "Downloading Kafka image..."
+singularity pull kafka.sif $KAFKA_IMAGE
+
+# Step 2: Start Zookeeper
 echo "Starting Zookeeper..."
 singularity exec \
     --bind ./$SESSION/tmp/zookeeper-data:/opt/bitnami/zookeeper/data \
@@ -25,7 +32,7 @@ singularity exec \
 echo "Waiting for Zookeeper to initialize..."
 sleep 20
 
-# Step 2: Start Kafka Broker
+# Step 3: Start Kafka Broker
 echo "Starting Kafka Broker..."
 singularity exec \
     --bind ./$SESSION/tmp/kafka-logs:/tmp/kafka-logs \
@@ -35,9 +42,9 @@ singularity exec \
 
 # Wait for Kafka to start
 echo "Waiting for Kafka Broker to initialize..."
-sleep 60
+sleep 30
 
-# Step 3: Initialize Kafka Topics
+# Step 4: Initialize Kafka Topics
 echo "Initializing Kafka Topics..."
 singularity exec \
     $INIT_IMAGE \
