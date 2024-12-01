@@ -19,7 +19,7 @@ singularity exec \
     --bind ./$SESSION/tmp/zookeeper-logs:/opt/bitnami/zookeeper/logs \
     --bind ../cluster/zoo.cfg:/opt/bitnami/zookeeper/conf/zoo.cfg \
     $ZOOKEEPER_IMAGE \
-    sh -c "ALLOW_ANONYMOUS_LOGIN=yes && /opt/bitnami/zookeeper/bin/zkServer.sh start" > /dev/null 2>&1 &
+    sh -c "ALLOW_ANONYMOUS_LOGIN=yes && /opt/bitnami/zookeeper/bin/zkServer.sh start" > ./$SESSION/zookeeper.log 2>&1 &
 
 # Wait for Zookeeper to start
 echo "Waiting for Zookeeper to initialize..."
