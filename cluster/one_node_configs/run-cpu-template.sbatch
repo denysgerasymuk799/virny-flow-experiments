@@ -13,6 +13,7 @@ MEM=32GB
 EMAIL=dh3553
 SESSION=$(date "+%Y_%m_%d__%H_%M_%S")
 
+
 # ====================================================================================
 # Define SLURM configs
 # ====================================================================================
@@ -29,10 +30,14 @@ SESSION=$(date "+%Y_%m_%d__%H_%M_%S")
 
 module purge
 
+
 # ====================================================================================
 # Define exp_config.yaml
 # ====================================================================================
 mkdir ./$SESSION
+mkdir -p ./$SESSION/tmp/zookeeper-data/
+mkdir -p ./$SESSION/tmp/zookeeper-logs/
+mkdir -p ./$SESSION/tmp/kafka-logs/
 
 cat <<EOL > ./$SESSION/exp_config.yaml
 # General experiment parameters
