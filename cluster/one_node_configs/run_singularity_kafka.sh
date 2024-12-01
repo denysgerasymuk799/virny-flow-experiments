@@ -35,7 +35,7 @@ singularity exec \
 
 # Wait for Kafka to start
 echo "Waiting for Kafka Broker to initialize..."
-sleep 30
+sleep 60
 
 # Step 3: Initialize Kafka Topics
 echo "Initializing Kafka Topics..."
