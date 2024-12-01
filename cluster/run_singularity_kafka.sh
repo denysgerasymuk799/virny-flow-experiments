@@ -14,7 +14,7 @@ echo "Starting Zookeeper..."
 singularity exec \
     --bind ./tmp/zookeeper-data:/opt/bitnami/zookeeper/data \
     --bind ./tmp/zookeeper-logs:/opt/bitnami/zookeeper/logs \
-    --bind ./tmp/zookeeper-data/zoo.cfg:/opt/bitnami/zookeeper/conf/zoo.cfg \
+    --bind ../cluster/zoo.cfg:/opt/bitnami/zookeeper/conf/zoo.cfg \
     $ZOOKEEPER_IMAGE \
     sh -c "ALLOW_ANONYMOUS_LOGIN=yes && /opt/bitnami/zookeeper/bin/zkServer.sh start" > /dev/null 2>&1 &
 
@@ -25,6 +25,7 @@ sleep 20
 # Step 2: Start Kafka Broker
 echo "Starting Kafka Broker..."
 singularity exec \
+    --bind ./tmp/kafka-logs:/tmp/kafka-logs \
     --bind ../cluster/server.properties:/opt/bitnami/kafka/config/server.properties \
     $KAFKA_IMAGE \
     sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties" > ./kafka-broker.txt 2>&1 &
