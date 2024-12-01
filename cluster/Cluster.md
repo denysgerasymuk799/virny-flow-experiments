@@ -82,7 +82,7 @@ singularity exec \
     
 ps aux | grep zoo
 
-tail -f /proc/1603732/fd/1
+tail -f /proc/1955710/fd/1
 
            
 singularity exec \
