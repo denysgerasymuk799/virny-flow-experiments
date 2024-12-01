@@ -1,7 +1,7 @@
 rm -rf ./tmp/zookeeper-data/*
 rm -rf ./tmp/zookeeper-logs/*
 rm -rf ./tmp/kafka-logs/*
-rm ./zookeeper_latest.sif
-rm ./kafka-broker.txt
-rm ./task_manager.txt
-rm ./worker_*
+rm -f ./zookeeper_latest.sif
+rm -f ./kafka-broker.txt
+rm -f ./task_manager.txt
+rm -f ./worker_*
