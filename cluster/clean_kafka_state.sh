@@ -3,3 +3,5 @@ rm -rf ./tmp/zookeeper-logs/*
 rm -rf ./tmp/kafka-logs/*
 rm ./zookeeper_latest.sif
 rm ./kafka-broker.txt
+rm ./task_manager.txt
+rm ./worker_*
