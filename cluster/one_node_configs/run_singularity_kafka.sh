@@ -24,13 +24,15 @@ singularity pull confluent-kafka.sif $INIT_IMAGE
 
 
 # Step 2: Start Zookeeper
-echo "Starting Zookeeper..."
-singularity exec \
-    --bind ./$SESSION/tmp/zookeeper-data:/opt/bitnami/zookeeper/data \
-    --bind ./$SESSION/tmp/zookeeper-logs:/opt/bitnami/zookeeper/logs \
-    --bind ../cluster/zoo.cfg:/opt/bitnami/zookeeper/conf/zoo.cfg \
-    zookeeper.sif \
-    sh -c "ALLOW_ANONYMOUS_LOGIN=yes && /opt/bitnami/zookeeper/bin/zkServer.sh start" > ./$SESSION/zookeeper.log 2>&1 &
+(
+  echo "Starting Zookeeper..."
+  singularity exec \
+      --bind ./$SESSION/tmp/zookeeper-data:/opt/bitnami/zookeeper/data \
+      --bind ./$SESSION/tmp/zookeeper-logs:/opt/bitnami/zookeeper/logs \
+      --bind ../cluster/zoo.cfg:/opt/bitnami/zookeeper/conf/zoo.cfg \
+      zookeeper.sif \
+      sh -c "ALLOW_ANONYMOUS_LOGIN=yes && /opt/bitnami/zookeeper/bin/zkServer.sh start"
+) > ./$SESSION/zookeeper.log 2>&1 &
 
 # Wait for Zookeeper to start
 echo "Waiting for Zookeeper to initialize..."
@@ -38,12 +40,14 @@ sleep 20
 
 
 # Step 3: Start Kafka Broker
-echo "Starting Kafka Broker..."
-singularity exec \
-    --bind ./$SESSION/tmp/kafka-logs:/tmp/kafka-logs \
-    --bind ../cluster/server.properties:/opt/bitnami/kafka/config/server.properties \
-    kafka.sif \
-    sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties" > ./$SESSION/kafka-broker.log 2>&1 &
+(
+  echo "Starting Kafka Broker..."
+  singularity exec \
+      --bind ./$SESSION/tmp/kafka-logs:/tmp/kafka-logs \
+      --bind ../cluster/server.properties:/opt/bitnami/kafka/config/server.properties \
+      kafka.sif \
+      sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties"
+) > ./$SESSION/kafka-broker.log 2>&1 &
 
 # Wait for Kafka to start
 echo "Waiting for Kafka Broker to initialize..."
