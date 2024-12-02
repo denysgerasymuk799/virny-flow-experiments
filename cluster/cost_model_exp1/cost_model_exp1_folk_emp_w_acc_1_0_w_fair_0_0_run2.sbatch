@@ -51,7 +51,7 @@ secrets_path: "/home/$EMAIL/projects/virny-flow-experiments/scripts/configs/secr
 ref_point: [0.20, 0.10]
 objectives:
   - { name: "objective_1", metric: "F1", group: "overall", weight: 1.0 }
-  - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "sex", weight: 0.0 }
+  - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "SEX&RAC1P", weight: 0.0 }
 max_trials: 50
 num_workers: $NUM_WORKERS
 num_pp_candidates: 2
