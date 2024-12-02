@@ -1,4 +1,4 @@
-cost_model_exp1_folk_emp_w_acc_1_0_w_fair_0_0_run1.sbatch#!/bin/bash
+#!/bin/bash
 
 # EXECUTE THIS SCRIPT FROM virny-flow-experiments/logs DIRECTORY
 
