@@ -15,18 +15,14 @@ SESSION=$(date "+%Y_%m_%d__%H_%M_%S")
 
 
 # ====================================================================================
-# Define SLURM configs
+# Submit job with variable substitution
 # ====================================================================================
-#SBATCH --nodes=1
-#SBATCH --mem=$MEM
-#SBATCH --cpus-per-task=$CPUS
-#SBATCH --time=48:00:00
-#SBATCH --mail-type=END
-#SBATCH --mail-user=$EMAIL@nyu.edu
-#SBATCH --account=pr_152_general
-#SBATCH --job-name=$EXP_CONFIG_NAME
-#SBATCH --output=%j_$EXP_CONFIG_NAME.out
-#SBATCH --error=%j_$EXP_CONFIG_NAME.err
+sbatch --nodes=1 --mem=$MEM --cpus-per-task=$CPUS --time=48:00:00 \
+       --mail-type=END --mail-user=$EMAIL@nyu.edu \
+       --account=pr_152_general \
+       --job-name=$EXP_CONFIG_NAME \
+       --output=%j_$EXP_CONFIG_NAME.out \
+       --wrap="echo Running job with name $EXP_CONFIG_NAME"
 
 module purge
 
