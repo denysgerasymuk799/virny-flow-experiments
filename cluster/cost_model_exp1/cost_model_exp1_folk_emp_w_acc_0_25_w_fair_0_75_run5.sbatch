@@ -3,32 +3,29 @@
 # EXECUTE THIS SCRIPT FROM virny-flow-experiments/logs DIRECTORY
 
 # ====================================================================================
-# Default parameters
-# ====================================================================================
-EXP_CONFIG_NAME=german_experiments7
-NUM_WORKERS=3
-CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
-CPUS=12
-MEM=32GB
-EMAIL=dh3553
-SESSION=$(date "+%Y_%m_%d__%H_%M_%S")
-
-
-# ====================================================================================
 # Define SLURM configs
 # ====================================================================================
 #SBATCH --nodes=1
-#SBATCH --mem=$MEM
-#SBATCH --cpus-per-task=$CPUS
+#SBATCH --mem=64GB
+#SBATCH --cpus-per-task=36
 #SBATCH --time=48:00:00
 #SBATCH --mail-type=END
-#SBATCH --mail-user=$EMAIL@nyu.edu
+#SBATCH --mail-user=dh3553@nyu.edu
 #SBATCH --account=pr_152_general
-#SBATCH --job-name=$EXP_CONFIG_NAME
-#SBATCH --output=%j_$EXP_CONFIG_NAME.out
-#SBATCH --error=%j_$EXP_CONFIG_NAME.err
+#SBATCH --job-name=cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75
+#SBATCH --output=%j_cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75.out
 
 module purge
+
+
+# ====================================================================================
+# Default parameters
+# ====================================================================================
+EXP_CONFIG_NAME=cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75
+NUM_WORKERS=8
+CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
+EMAIL=dh3553
+SESSION=$(date "+%Y_%m_%d__%H_%M_%S")
 
 
 # ====================================================================================
@@ -42,20 +39,20 @@ mkdir -p ./$SESSION/tmp/kafka-logs/
 cat <<EOL > ./$SESSION/exp_config.yaml
 # General experiment parameters
 exp_config_name: "$EXP_CONFIG_NAME"
-dataset: "german"
-sensitive_attrs_for_intervention: ["sex"]
-null_imputers: ["miss_forest"]
+dataset: "folk_emp"
+sensitive_attrs_for_intervention: ["SEX", "RAC1P"]
+null_imputers: []
 fairness_interventions: ["DIR"]
-models: ["dt_clf"]
-run_nums: [1, 2]
+models: ["lr_clf", "rf_clf", "lgbm_clf"]
+run_nums: [5]
 secrets_path: "/home/$EMAIL/projects/virny-flow-experiments/scripts/configs/secrets.env"
 
 # Parameters for optimisation
 ref_point: [0.20, 0.10]
 objectives:
-  - { name: "objective_1", metric: "F1", group: "overall", weight: 0.5 }
-  - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "sex", weight: 0.5 }
-max_trials: 3
+  - { name: "objective_1", metric: "F1", group: "overall", weight: 0.25 }
+  - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "sex", weight: 0.75 }
+max_trials: 50
 num_workers: $NUM_WORKERS
 num_pp_candidates: 2
 training_set_fractions_for_halting: [0.5, 0.75, 1.0]
