@@ -3,28 +3,29 @@
 # EXECUTE THIS SCRIPT FROM virny-flow-experiments/logs DIRECTORY
 
 # ====================================================================================
+# Define SLURM configs
+# ====================================================================================
+#SBATCH --nodes=1
+#SBATCH --mem=16GB
+#SBATCH --cpus-per-task=12
+#SBATCH --time=48:00:00
+#SBATCH --mail-type=END
+#SBATCH --mail-user=dh3553@nyu.edu
+#SBATCH --account=pr_152_general
+#SBATCH --job-name=german_experiments7
+#SBATCH --output=%j_german_experiments7.out
+
+module purge
+
+
+# ====================================================================================
 # Default parameters
 # ====================================================================================
 EXP_CONFIG_NAME=german_experiments7
 NUM_WORKERS=3
 CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
-CPUS=6
-MEM=16GB
 EMAIL=dh3553
 SESSION=$(date "+%Y_%m_%d__%H_%M_%S")
-
-
-# ====================================================================================
-# Submit job with variable substitution
-# ====================================================================================
-sbatch --nodes=1 --mem=$MEM --cpus-per-task=$CPUS --time=48:00:00 \
-       --mail-type=END --mail-user=$EMAIL@nyu.edu \
-       --account=pr_152_general \
-       --job-name=$EXP_CONFIG_NAME \
-       --output=%j_$EXP_CONFIG_NAME.out \
-       --wrap="echo Running job with name $EXP_CONFIG_NAME"
-
-module purge
 
 
 # ====================================================================================
