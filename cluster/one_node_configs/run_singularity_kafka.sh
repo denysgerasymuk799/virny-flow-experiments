@@ -36,7 +36,7 @@ singularity pull confluent-kafka.sif $INIT_IMAGE
 
 # Wait for Zookeeper to start
 echo "Waiting for Zookeeper to initialize..."
-sleep 20
+sleep 30
 
 
 # Step 3: Start Kafka Broker
@@ -51,7 +51,7 @@ sleep 20
 
 # Wait for Kafka to start
 echo "Waiting for Kafka Broker to initialize..."
-sleep 30
+sleep 60
 
 
 # Step 4: Initialize Kafka Topics
