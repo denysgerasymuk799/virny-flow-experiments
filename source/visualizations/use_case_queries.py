@@ -133,7 +133,7 @@ def get_best_lps_for_exp_config(db_client: CoreDBClient, exp_config_name: str):
     best_pps_per_lp_and_run_num_df = get_best_pps_per_lp_and_run_num(db_client=db_client,
                                                                      exp_config_name=exp_config_name)
 
-    # Run the query
+    # Get best lp for the specific exp_config_name
     max_lp_avg_compound_pp_quality = sqldf("""
         SELECT MAX(avg_compound_pp_quality) AS max_lp_avg_compound_pp_quality
         FROM (
@@ -175,7 +175,8 @@ def get_best_lps_per_exp_config(secrets_path: str, exp_config_names: list):
 
 
 def get_models_disparity_metric_df(subgroup_metrics_df: pd.DataFrame, disparity_metric_name: str, group: str):
-    source_metric, operation = DISPARITY_METRIC_METADATA[disparity_metric_name]["source_metric"], DISPARITY_METRIC_METADATA[disparity_metric_name]["operation"]
+    source_metric, operation = (DISPARITY_METRIC_METADATA[disparity_metric_name]["source_metric"],
+                                DISPARITY_METRIC_METADATA[disparity_metric_name]["operation"])
     group_metrics_df = subgroup_metrics_df[subgroup_metrics_df['metric'] == source_metric]
     if operation == "ratio":
         group_metrics_df['disparity_metric_value'] = group_metrics_df[group + '_dis'] / group_metrics_df[group + '_priv']
