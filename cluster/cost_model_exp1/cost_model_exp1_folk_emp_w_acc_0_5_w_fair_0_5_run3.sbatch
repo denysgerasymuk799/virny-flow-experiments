@@ -25,7 +25,7 @@ EXP_CONFIG_NAME=cost_model_exp1_folk_emp_w_acc_0_5_w_fair_0_5
 NUM_WORKERS=8
 CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
 EMAIL=dh3553
-SESSION=$(date "+%Y_%m_%d__%H_%M_%S")
+SESSION=${SLURM_JOB_ID}_${EXP_CONFIG_NAME}
 
 
 # ====================================================================================
