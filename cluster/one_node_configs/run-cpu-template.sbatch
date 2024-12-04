@@ -25,7 +25,7 @@ EXP_CONFIG_NAME=german_experiments7
 NUM_WORKERS=3
 CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
 EMAIL=dh3553
-SESSION=$(date "+%Y_%m_%d__%H_%M_%S")
+SESSION=${SLURM_JOB_ID}_${EXP_CONFIG_NAME}
 
 
 # ====================================================================================
