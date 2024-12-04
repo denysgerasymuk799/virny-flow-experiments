@@ -1,0 +1,142 @@
+{
+  "task_id": "OpenBox",
+  "num_objectives": 2,
+  "num_constraints": 0,
+  "ref_point": [
+    0.2,
+    0.1
+  ],
+  "meta_info": {},
+  "global_start_time": "2024-12-02T16:04:38.622350",
+  "observations": [
+    {
+      "config": {
+        "model__max_depth": 5,
+        "mvi__RandomForestClassifier__bootstrap": true,
+        "mvi__RandomForestClassifier__max_depth": 10,
+        "mvi__RandomForestClassifier__min_samples_leaf": 1,
+        "mvi__RandomForestClassifier__min_samples_split": 2,
+        "mvi__RandomForestClassifier__n_estimators": 125,
+        "mvi__RandomForestRegressor__bootstrap": true,
+        "mvi__RandomForestRegressor__max_depth": 10,
+        "mvi__RandomForestRegressor__min_samples_leaf": 1,
+        "mvi__RandomForestRegressor__min_samples_split": 2,
+        "mvi__RandomForestRegressor__n_estimators": 125
+      },
+      "objectives": [
+        0.17149220489977723,
+        0.07528957528957536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 2.9869801998138428,
+      "create_time": "2024-12-02T16:04:52.082918",
+      "extra_info": {
+        "reversed_objectives": [
+          0.8285077951002228,
+          0.9247104247104246
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "sex",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__max_depth": 10,
+        "mvi__RandomForestClassifier__bootstrap": true,
+        "mvi__RandomForestClassifier__max_depth": "None",
+        "mvi__RandomForestClassifier__min_samples_leaf": 4,
+        "mvi__RandomForestClassifier__min_samples_split": 2,
+        "mvi__RandomForestClassifier__n_estimators": 100,
+        "mvi__RandomForestRegressor__bootstrap": true,
+        "mvi__RandomForestRegressor__max_depth": "None",
+        "mvi__RandomForestRegressor__min_samples_leaf": 4,
+        "mvi__RandomForestRegressor__min_samples_split": 10,
+        "mvi__RandomForestRegressor__n_estimators": 150
+      },
+      "objectives": [
+        0.19450800915331812,
+        0.08156370656370648
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 2.7261903285980225,
+      "create_time": "2024-12-02T16:04:57.808841",
+      "extra_info": {
+        "reversed_objectives": [
+          0.8054919908466819,
+          0.9184362934362935
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "sex",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__max_depth": 5,
+        "mvi__RandomForestClassifier__bootstrap": false,
+        "mvi__RandomForestClassifier__max_depth": 10,
+        "mvi__RandomForestClassifier__min_samples_leaf": 2,
+        "mvi__RandomForestClassifier__min_samples_split": 10,
+        "mvi__RandomForestClassifier__n_estimators": 150,
+        "mvi__RandomForestRegressor__bootstrap": false,
+        "mvi__RandomForestRegressor__max_depth": "None",
+        "mvi__RandomForestRegressor__min_samples_leaf": 1,
+        "mvi__RandomForestRegressor__min_samples_split": 10,
+        "mvi__RandomForestRegressor__n_estimators": 150
+      },
+      "objectives": [
+        0.16888888888888887,
+        0.08204633204633205
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 3.0409798622131348,
+      "create_time": "2024-12-02T16:05:04.291139",
+      "extra_info": {
+        "reversed_objectives": [
+          0.8311111111111111,
+          0.917953667953668
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "sex",
+            "weight": 0.5
+          }
+        ]
+      }
+    }
+  ]
+}
