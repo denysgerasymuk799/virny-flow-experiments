@@ -102,11 +102,10 @@ def create_config_space(logical_pipeline_name: str):
 
 if __name__ == '__main__':
     # Input variables
-    # lp_name = 'miss_forest&DIR&lr_clf'
-    # history_filename = 'history_2024-11-21-00-39-13-139162.json'
-    lp_name = 'miss_forest&DIR&lr_clf'
-    run_num = 2
-    history_filename = 'history_2024-11-30-01-31-27-839847.json'
+    exp_config_name = "cost_model_exp1_folk_emp_w_acc_1_0_w_fair_0_0"
+    run_num = 1
+    lp_name = 'None&DIR&lgbm_clf'
+    history_filename = 'history_2024-12-04-08-15-25-655409.json'
     surrogate_model_type = 'gp'  # 'gp' or 'prf'
     bo_advisor_config = BOAdvisorConfig()
 
@@ -115,7 +114,7 @@ if __name__ == '__main__':
     exp_config = create_exp_config_obj(exp_config_yaml_path=exp_config_yaml_path)
 
     config_space = create_config_space(lp_name)
-    history_path = f'../history/{exp_config.exp_config_name}/run_num_{str(run_num)}/{lp_name}/' + history_filename
+    history_path = f'../logs/history/{exp_config_name}/run_num_{str(run_num)}/{lp_name}/' + history_filename
     history = History.load_json(history_path, config_space)
 
     task_info = {
