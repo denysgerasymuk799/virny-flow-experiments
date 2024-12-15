@@ -53,7 +53,7 @@ optimisation_args:
   ref_point: [0.20, 0.10]
   objectives:
     - { name: "objective_1", metric: "F1", group: "overall", weight: 0.25 }
-    - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "sex", weight: 0.75 }
+    - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "SEX&RAC1P", weight: 0.75 }
   max_trials: 30
   num_workers: $NUM_WORKERS
   num_pp_candidates: 2
