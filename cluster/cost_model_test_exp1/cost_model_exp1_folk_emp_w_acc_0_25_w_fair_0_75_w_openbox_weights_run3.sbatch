@@ -12,8 +12,8 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-user=dh3553@nyu.edu
 #SBATCH --account=pr_152_general
-#SBATCH --job-name=cost_model_exp1_folk_emp_w_acc_0_75_w_fair_0_25_wo_openbox_weights
-#SBATCH --output=%j_cost_model_exp1_folk_emp_w_acc_0_75_w_fair_0_25_wo_openbox_weights.out
+#SBATCH --job-name=cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75_w_openbox_weights
+#SBATCH --output=%j_cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75_w_openbox_weights.out
 
 module purge
 
@@ -21,7 +21,7 @@ module purge
 # ====================================================================================
 # Default parameters
 # ====================================================================================
-EXP_CONFIG_NAME=cost_model_exp1_folk_emp_w_acc_0_75_w_fair_0_25_wo_openbox_weights
+EXP_CONFIG_NAME=cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75_w_openbox_weights
 NUM_WORKERS=8
 CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
 EMAIL=dh3553
@@ -39,7 +39,7 @@ mkdir -p ./$SESSION/tmp/kafka-logs/
 cat <<EOL > ./$SESSION/exp_config.yaml
 common_args:
   exp_config_name: "$EXP_CONFIG_NAME"
-  run_nums: [1]
+  run_nums: [3]
   secrets_path: "/home/$EMAIL/projects/virny-flow-experiments/scripts/configs/secrets.env"
 
 pipeline_args:
@@ -52,8 +52,8 @@ pipeline_args:
 optimisation_args:
   ref_point: [0.20, 0.10]
   objectives:
-    - { name: "objective_1", metric: "F1", group: "overall", weight: 0.75 }
-    - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "sex", weight: 0.25 }
+    - { name: "objective_1", metric: "F1", group: "overall", weight: 0.25 }
+    - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "sex", weight: 0.75 }
   max_trials: 30
   num_workers: $NUM_WORKERS
   num_pp_candidates: 2
