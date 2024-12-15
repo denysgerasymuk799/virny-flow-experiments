@@ -119,7 +119,7 @@ if __name__ == '__main__':
 
     task_info = {
         'advisor_type': 'default',
-        'max_runs': exp_config.max_trials,
+        'max_runs': exp_config.optimisation_args.max_trials,
         'max_runtime_per_trial': bo_advisor_config.max_runtime_per_trial,
         'surrogate_type': surrogate_model_type,
         'constraint_surrogate_type': None,
