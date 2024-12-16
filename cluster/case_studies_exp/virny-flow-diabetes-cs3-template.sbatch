@@ -69,10 +69,10 @@ EOL
 # Start VirnyFlow cluster
 # ====================================================================================
 # Start Kafka
-bash ../cluster/$CLUSTER_TYPE/run_singularity_kafka.sh $NUM_WORKERS $SESSION
+bash /home/$EMAIL/projects/virny-flow-experiments/cluster/$CLUSTER_TYPE/run_singularity_kafka.sh $NUM_WORKERS $SESSION
 
 # Start virny_flow_cluster
 singularity exec \
 	    --overlay /scratch/$EMAIL/virny_flow_project/vldb_sds_env.ext3:ro \
 	    /scratch/work/public/singularity/ubuntu-20.04.1.sif \
-	    /bin/bash -c "source /ext3/env.sh; bash ../cluster/$CLUSTER_TYPE/run_virny_flow_cluster.sh $NUM_WORKERS $SESSION $EMAIL"
+	    /bin/bash -c "source /ext3/env.sh; bash /home/$EMAIL/projects/virny-flow-experiments/cluster/$CLUSTER_TYPE/run_virny_flow_cluster.sh $NUM_WORKERS $SESSION $EMAIL"

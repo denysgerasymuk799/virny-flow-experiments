@@ -77,10 +77,10 @@ for job_config in "${job_configs[@]}"
 do
     # Split the job_config into separate variables
     read -r exp_name dataset case_study run_num w1 w2 w3 exp_config_suffix max_trials email <<< "$job_config"
-    template_file="../cluster/${exp_name}/virny-flow-${dataset}-${case_study}-template.sbatch"
+    template_file="/home/${email}/projects/virny-flow-experiments/cluster/${exp_name}/virny-flow-${dataset}-${case_study}-template.sbatch"
 
     # Define the output file name
-    output_file="../cluster/${exp_name}/sbatch_files/${exp_name}_${dataset}_${case_study}_w_${w1}_${w2}_${w3}_run_${run_num}_${index}.sbatch"
+    output_file="/home/${email}/projects/virny-flow-experiments/cluster/${exp_name}/sbatch_files/${exp_name}_${dataset}_${case_study}_w_${w1}_${w2}_${w3}_run_${run_num}_${index}.sbatch"
 
     # Create an empty file
     touch $output_file
