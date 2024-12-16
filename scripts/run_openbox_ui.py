@@ -1,3 +1,4 @@
+import os
 import pathlib
 from openbox import History
 
@@ -8,9 +9,9 @@ from virny_flow.visualizations.viz_utils import build_visualizer, create_config_
 
 if __name__ == '__main__':
     # Input variables
-    lp_name = 'miss_forest&DIR&lr_clf'
+    lp_name = 'None&DIR&lgbm_clf'
     run_num = 1
-    history_filename = 'history_2024-12-14-23-54-45-330002.json'
+    history_filename = 'history_2024-12-04-08-15-25-655409.json'
     surrogate_model_type = 'prf'  # 'gp' or 'prf'
     bo_advisor_config = BOAdvisorConfig()
 
@@ -19,7 +20,7 @@ if __name__ == '__main__':
     exp_config = create_exp_config_obj(exp_config_yaml_path=exp_config_yaml_path)
 
     config_space = create_config_space(lp_name)
-    history_path = f'../history/{exp_config.common_args.exp_config_name}/run_num_{str(run_num)}/{lp_name}/' + history_filename
+    history_path = f'../logs/history/{exp_config.common_args.exp_config_name}/run_num_{str(run_num)}/{lp_name}/' + history_filename
     history = History.load_json(history_path, config_space)
 
     task_info = {
