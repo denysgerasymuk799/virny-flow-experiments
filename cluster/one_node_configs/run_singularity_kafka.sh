@@ -3,6 +3,7 @@
 # Define variables
 NUM_WORKERS=$1
 SESSION=$2
+EMAIL=$3
 
 ZOOKEEPER_IMAGE="docker://bitnami/zookeeper:latest"
 KAFKA_IMAGE="docker://bitnami/kafka:latest"
