@@ -69,7 +69,7 @@ EOL
 # Start VirnyFlow cluster
 # ====================================================================================
 # Start Kafka
-bash /home/$EMAIL/projects/virny-flow-experiments/cluster/$CLUSTER_TYPE/run_singularity_kafka.sh $NUM_WORKERS $SESSION
+bash /home/$EMAIL/projects/virny-flow-experiments/cluster/$CLUSTER_TYPE/run_singularity_kafka.sh $NUM_WORKERS $SESSION $EMAIL
 
 # Start virny_flow_cluster
 singularity exec \
