@@ -12,8 +12,8 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-user=dh3553@nyu.edu
 #SBATCH --account=pr_152_general
-#SBATCH --job-name=cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75_w_openbox_weights
-#SBATCH --output=%j_cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75_w_openbox_weights.out
+#SBATCH --job-name=cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75_wo_openbox_weights
+#SBATCH --output=%j_cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75_wo_openbox_weights.out
 
 module purge
 
@@ -21,7 +21,7 @@ module purge
 # ====================================================================================
 # Default parameters
 # ====================================================================================
-EXP_CONFIG_NAME=cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75_w_openbox_weights
+EXP_CONFIG_NAME=cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75_wo_openbox_weights
 NUM_WORKERS=8
 CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
 EMAIL=dh3553

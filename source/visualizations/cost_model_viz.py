@@ -2,7 +2,7 @@ import pandas as pd
 import altair as alt
 from altair.utils.schemapi import Undefined
 
-from source.visualizations.use_case_queries import get_models_disparity_metric_df
+from virny_flow.visualizations.use_case_queries import get_models_disparity_metric_df
 
 
 def create_box_plot_per_cost_model(to_plot: pd.DataFrame, metric_name: str, group: str = 'overall',
