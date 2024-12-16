@@ -80,7 +80,7 @@ do
     template_file="/home/${email}/projects/virny-flow-experiments/cluster/${exp_name}/virny-flow-${dataset}-${case_study}-template.sbatch"
 
     # Define the output file name
-    output_file="/home/${email}/projects/virny-flow-experiments/cluster/${exp_name}/sbatch_files/${exp_name}_${dataset}_${case_study}_w_${w1}_${w2}_${w3}_run_${run_num}_${index}.sbatch"
+    output_file="/home/${email}/projects/virny-flow-experiments/cluster/${exp_name}/sbatch_files/${exp_name}_${dataset}_${case_study}_${exp_config_suffix}_run_${run_num}_${index}.sbatch"
 
     # Create an empty file
     touch $output_file
