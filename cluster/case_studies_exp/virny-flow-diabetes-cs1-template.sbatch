@@ -54,7 +54,7 @@ optimisation_args:
     - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "Gender", weight: <W2> }
   max_trials: <MAX_TRIALS>
   num_workers: $NUM_WORKERS
-  num_pp_candidates: 4
+  num_pp_candidates: 2
   training_set_fractions_for_halting: [0.7, 0.8, 0.9, 1.0]
   exploration_factor: 0.5
   risk_factor: 0.5
