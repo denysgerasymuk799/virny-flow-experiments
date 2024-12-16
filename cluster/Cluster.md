@@ -39,8 +39,8 @@ Singularity> source /ext3/env.sh
 
 Commands for development on the cluster using CPUs:
 ```shell
-# To request 12 CPUs, 16 GB memory, and 12 hour running duration
-srun -t12:00:00 --mem=16000 --ntasks-per-node=1 --cpus-per-task=12 --pty /bin/bash
+# To request 4 CPUs, 16 GB memory, and 12 hour running duration
+srun -t12:00:00 --mem=16000 --ntasks-per-node=1 --cpus-per-task=4 --pty /bin/bash
 
 singularity exec --overlay /scratch/dh3553/virny_flow_project/vldb_sds_env.ext3:rw /scratch/work/public/singularity/ubuntu-20.04.1.sif /bin/bash
 
