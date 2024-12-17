@@ -9,6 +9,10 @@ NYU HPC dashboard -- [https://ood-4.hpc.nyu.edu/pun/sys/dashboard](https://ood-4
 
 Start a VirnyFlow cluster in one SLURM job:
 ```shell
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+pip install -r requirements.txt
+
 # Step 1: Create a sbatch file with all arguments, similar to virny-flow-experiments/cluster/cost_model_exp1/run-cost-model-exp1.sbatch
 # Step 2: Execute the following command:
 scratch/dh3553/projects/virny-flow-experiments/logs$ sbatch ../cluster/cost_model_exp1/run-cost-model-exp1.sbatch
@@ -50,6 +54,12 @@ Singularity> source /ext3/env.sh
 Run jobs using a bash script:
 ```shell
 /logs $ bash ../cluster/run_baselines/run-baselines.sh
+```
+
+Uninstall a library and its dependencies:
+```shell
+pip install pip-autoremove
+pip-autoremove library_name
 ```
 
 Find location of a python package to change source files:

@@ -45,7 +45,7 @@ pipeline_args:
   sensitive_attrs_for_intervention: ["Gender"]
   null_imputers: []
   fairness_interventions: []
-  models: ["lr_clf", "rf_clf", "lgbm_clf", "gandalf_clf"]
+  models: ["lr_clf", "rf_clf", "lgbm_clf"]
 
 optimisation_args:
   ref_point: [0.20, 0.20]
