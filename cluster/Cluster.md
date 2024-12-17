@@ -11,7 +11,7 @@ Start a VirnyFlow cluster in one SLURM job:
 ```shell
 # Step 1: Create a sbatch file with all arguments, similar to virny-flow-experiments/cluster/cost_model_exp1/run-cost-model-exp1.sbatch
 # Step 2: Execute the following command:
-virny-flow-experiments/logs$ sbatch ../cluster/cost_model_exp1/run-cost-model-exp1.sbatch
+scratch/dh3553/projects/virny-flow-experiments/logs$ sbatch ../cluster/cost_model_exp1/run-cost-model-exp1.sbatch
 ```
 
 
