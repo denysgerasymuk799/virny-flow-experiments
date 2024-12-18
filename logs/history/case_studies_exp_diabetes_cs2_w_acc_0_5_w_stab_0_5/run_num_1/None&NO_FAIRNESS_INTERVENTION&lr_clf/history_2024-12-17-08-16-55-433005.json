@@ -1,0 +1,7813 @@
+{
+  "task_id": "OpenBox",
+  "num_objectives": 2,
+  "num_constraints": 0,
+  "ref_point": [
+    0.2,
+    0.2
+  ],
+  "meta_info": {},
+  "global_start_time": "2024-12-17T07:37:41.850258",
+  "observations": [
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.005788087844849,
+      "create_time": "2024-12-17T07:38:04.163706",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.187123537063599,
+      "create_time": "2024-12-17T07:38:12.295686",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 9.832252264022827,
+      "create_time": "2024-12-17T07:38:16.438353",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 18.916046142578125,
+      "create_time": "2024-12-17T07:38:19.105099",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 20.109901666641235,
+      "create_time": "2024-12-17T07:38:20.296193",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 11.297871351242065,
+      "create_time": "2024-12-17T07:38:26.533151",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 18.313453912734985,
+      "create_time": "2024-12-17T07:38:44.133979",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 20.889015674591064,
+      "create_time": "2024-12-17T07:38:47.815345",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 11.198112964630127,
+      "create_time": "2024-12-17T07:38:59.524003",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 18.469284057617188,
+      "create_time": "2024-12-17T07:39:05.604083",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 16.76965594291687,
+      "create_time": "2024-12-17T07:39:08.601012",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 22.495739936828613,
+      "create_time": "2024-12-17T07:39:10.683543",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.5296971797943115,
+      "create_time": "2024-12-17T07:39:17.778878",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 18.161044359207153,
+      "create_time": "2024-12-17T07:39:18.117491",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 3.6835718154907227,
+      "create_time": "2024-12-17T07:39:25.604602",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.252792835235596,
+      "create_time": "2024-12-17T07:39:27.833779",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.937775611877441,
+      "create_time": "2024-12-17T07:39:31.285325",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.49857234954834,
+      "create_time": "2024-12-17T07:39:40.468608",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.661582946777344,
+      "create_time": "2024-12-17T07:39:42.344886",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 18.106874465942383,
+      "create_time": "2024-12-17T07:39:42.461418",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03470588235294114
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.996865272521973,
+      "create_time": "2024-12-17T07:39:44.178474",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06941176470588228
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9305882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 12.042821645736694,
+      "create_time": "2024-12-17T07:40:01.576600",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.068936347961426,
+      "create_time": "2024-12-17T07:40:12.072180",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.093818426132202,
+      "create_time": "2024-12-17T07:40:14.088869",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.962769269943237,
+      "create_time": "2024-12-17T07:40:15.052309",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 3.754262924194336,
+      "create_time": "2024-12-17T07:40:16.455657",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.275035619735718,
+      "create_time": "2024-12-17T07:40:20.950851",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.188523292541504,
+      "create_time": "2024-12-17T07:40:21.171250",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 3.4965131282806396,
+      "create_time": "2024-12-17T07:40:30.543825",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 14.108728647232056,
+      "create_time": "2024-12-17T07:40:45.635398",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 13.348308324813843,
+      "create_time": "2024-12-17T07:40:46.430998",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.088296413421631,
+      "create_time": "2024-12-17T07:40:51.222915",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.335155010223389,
+      "create_time": "2024-12-17T07:40:55.772903",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 17.690500736236572,
+      "create_time": "2024-12-17T07:40:59.284063",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 10.553669691085815,
+      "create_time": "2024-12-17T07:40:57.482561",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.623683214187622,
+      "create_time": "2024-12-17T07:41:04.530207",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.8819661140441895,
+      "create_time": "2024-12-17T07:41:05.774075",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 9.820971488952637,
+      "create_time": "2024-12-17T07:41:08.077829",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.640791416168213,
+      "create_time": "2024-12-17T07:41:11.932180",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 23.873615264892578,
+      "create_time": "2024-12-17T07:41:15.533830",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.168224811553955,
+      "create_time": "2024-12-17T07:41:15.786292",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 22.110798358917236,
+      "create_time": "2024-12-17T07:41:18.438985",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.51556921005249,
+      "create_time": "2024-12-17T07:41:18.532863",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.151206016540527,
+      "create_time": "2024-12-17T07:41:22.216792",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03470588235294114
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 11.359557390213013,
+      "create_time": "2024-12-17T07:41:30.258254",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06941176470588228
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9305882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 13.02009105682373,
+      "create_time": "2024-12-17T07:41:29.302803",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 19.38165044784546,
+      "create_time": "2024-12-17T07:42:01.914934",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 18.388600826263428,
+      "create_time": "2024-12-17T07:42:04.978771",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.429081678390503,
+      "create_time": "2024-12-17T07:42:53.009426",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.601891994476318,
+      "create_time": "2024-12-17T07:42:53.856405",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 3.7098281383514404,
+      "create_time": "2024-12-17T07:42:55.515155",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 13.271376132965088,
+      "create_time": "2024-12-17T07:43:07.836905",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 12.893710851669312,
+      "create_time": "2024-12-17T07:43:10.738302",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.566137790679932,
+      "create_time": "2024-12-17T07:43:17.204937",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.499050617218018,
+      "create_time": "2024-12-17T07:43:41.309946",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 3.3607258796691895,
+      "create_time": "2024-12-17T07:43:49.063760",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 14.531548500061035,
+      "create_time": "2024-12-17T07:44:04.164770",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 28.031264543533325,
+      "create_time": "2024-12-17T07:44:39.673046",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03470588235294114
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 12.677071332931519,
+      "create_time": "2024-12-17T07:44:44.765723",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06941176470588228
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9305882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 25.89712691307068,
+      "create_time": "2024-12-17T07:44:42.098187",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03470588235294114
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.393939733505249,
+      "create_time": "2024-12-17T07:45:21.046763",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06941176470588228
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9305882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.656670808792114,
+      "create_time": "2024-12-17T07:45:39.448024",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.927361249923706,
+      "create_time": "2024-12-17T07:46:30.558194",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 10.151079416275024,
+      "create_time": "2024-12-17T07:46:39.865988",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 16.39887571334839,
+      "create_time": "2024-12-17T07:49:21.473089",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 17.61055564880371,
+      "create_time": "2024-12-17T07:49:22.686752",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.148784160614014,
+      "create_time": "2024-12-17T07:49:18.187288",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.507725477218628,
+      "create_time": "2024-12-17T07:49:31.741269",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03470588235294114
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.166667938232422,
+      "create_time": "2024-12-17T07:49:38.988150",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06941176470588228
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9305882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 16.337379932403564,
+      "create_time": "2024-12-17T07:49:41.553105",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 10.317759037017822,
+      "create_time": "2024-12-17T07:49:55.608463",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 10.20678448677063,
+      "create_time": "2024-12-17T07:49:50.088619",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 14.663319826126099,
+      "create_time": "2024-12-17T07:49:59.827002",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 24.516304969787598,
+      "create_time": "2024-12-17T07:50:12.945747",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 13.71975564956665,
+      "create_time": "2024-12-17T07:50:27.149839",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 3.1814181804656982,
+      "create_time": "2024-12-17T07:50:48.093763",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 9.45230746269226,
+      "create_time": "2024-12-17T07:51:01.648774",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 10.199969291687012,
+      "create_time": "2024-12-17T07:51:03.951984",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 14.526663780212402,
+      "create_time": "2024-12-17T07:51:08.125834",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.415917158126831,
+      "create_time": "2024-12-17T07:51:11.829965",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.7823326587677,
+      "create_time": "2024-12-17T07:51:21.302751",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 13.662801265716553,
+      "create_time": "2024-12-17T07:51:13.059066",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 11.729624271392822,
+      "create_time": "2024-12-17T07:51:20.285855",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 28.213401794433594,
+      "create_time": "2024-12-17T07:51:25.248543",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.676820278167725,
+      "create_time": "2024-12-17T07:51:27.524399",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 21.789832592010498,
+      "create_time": "2024-12-17T07:51:34.045440",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.658373832702637,
+      "create_time": "2024-12-17T07:51:28.512768",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.132972002029419,
+      "create_time": "2024-12-17T07:51:34.051651",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 27.71545386314392,
+      "create_time": "2024-12-17T07:51:28.476208",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.626274585723877,
+      "create_time": "2024-12-17T07:51:40.984954",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.993804693222046,
+      "create_time": "2024-12-17T07:52:42.754494",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 16.42881751060486,
+      "create_time": "2024-12-17T07:52:49.769889",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 9.192250967025757,
+      "create_time": "2024-12-17T07:53:04.695660",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.783051013946533,
+      "create_time": "2024-12-17T07:53:02.604516",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 17.953566551208496,
+      "create_time": "2024-12-17T07:52:54.184790",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 10.580108404159546,
+      "create_time": "2024-12-17T07:52:54.084298",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 35.66271638870239,
+      "create_time": "2024-12-17T07:53:26.121915",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 26.74495506286621,
+      "create_time": "2024-12-17T07:53:17.076977",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 30.021571397781372,
+      "create_time": "2024-12-17T07:53:24.666115",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 26.572961568832397,
+      "create_time": "2024-12-17T07:53:29.669858",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 26.388038158416748,
+      "create_time": "2024-12-17T07:53:51.473810",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 21.572845458984375,
+      "create_time": "2024-12-17T07:53:39.108074",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.206400394439697,
+      "create_time": "2024-12-17T07:54:50.387300",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03470588235294114
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.7402355670928955,
+      "create_time": "2024-12-17T07:55:11.939955",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06941176470588228
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9305882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 14.071050643920898,
+      "create_time": "2024-12-17T07:55:23.709226",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.37070894241333,
+      "create_time": "2024-12-17T07:55:31.621636",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.444050550460815,
+      "create_time": "2024-12-17T07:56:12.779465",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.160508632659912,
+      "create_time": "2024-12-17T07:56:12.406497",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.665907621383667,
+      "create_time": "2024-12-17T07:56:22.934835",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 11.344368934631348,
+      "create_time": "2024-12-17T07:56:34.802180",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 3.9152746200561523,
+      "create_time": "2024-12-17T07:57:15.571992",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.481854200363159,
+      "create_time": "2024-12-17T07:57:38.474316",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 12.65020227432251,
+      "create_time": "2024-12-17T07:57:44.337727",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 23.232244968414307,
+      "create_time": "2024-12-17T07:57:50.650920",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 21.875046253204346,
+      "create_time": "2024-12-17T07:58:00.139784",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 13.580915689468384,
+      "create_time": "2024-12-17T07:58:07.241892",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.886662006378174,
+      "create_time": "2024-12-17T07:58:40.608869",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.268323659896851,
+      "create_time": "2024-12-17T07:58:51.482656",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 14.904512882232666,
+      "create_time": "2024-12-17T07:58:59.135020",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 16.04620909690857,
+      "create_time": "2024-12-17T07:59:00.277587",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.382094860076904,
+      "create_time": "2024-12-17T07:59:10.620375",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.675772190093994,
+      "create_time": "2024-12-17T07:59:09.912206",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 8.975497245788574,
+      "create_time": "2024-12-17T07:59:33.426407",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 18.294995069503784,
+      "create_time": "2024-12-17T08:00:20.395638",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 18.04505443572998,
+      "create_time": "2024-12-17T08:00:20.246909",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.9014716148376465,
+      "create_time": "2024-12-17T08:00:25.854815",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 16.303786516189575,
+      "create_time": "2024-12-17T08:00:41.875927",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 12.719139099121094,
+      "create_time": "2024-12-17T08:00:38.647682",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 3.412524461746216,
+      "create_time": "2024-12-17T08:01:47.577010",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.954442262649536,
+      "create_time": "2024-12-17T08:02:11.777151",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.815945148468018,
+      "create_time": "2024-12-17T08:02:23.781668",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.014657974243164,
+      "create_time": "2024-12-17T08:02:23.967500",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.59553861618042,
+      "create_time": "2024-12-17T08:02:31.792532",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03470588235294114
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 8.966850996017456,
+      "create_time": "2024-12-17T08:02:53.656111",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06941176470588228
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9305882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 18.71181058883667,
+      "create_time": "2024-12-17T08:03:03.435990",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.3984949588775635,
+      "create_time": "2024-12-17T08:03:10.593642",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.607424974441528,
+      "create_time": "2024-12-17T08:03:12.045439",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 21.050049304962158,
+      "create_time": "2024-12-17T08:03:45.413393",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 13.786928653717041,
+      "create_time": "2024-12-17T08:03:38.049564",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 21.14788794517517,
+      "create_time": "2024-12-17T08:03:45.390475",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 25.07864999771118,
+      "create_time": "2024-12-17T08:04:09.372228",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 8.982532501220703,
+      "create_time": "2024-12-17T08:03:59.188413",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 15.955098390579224,
+      "create_time": "2024-12-17T08:04:06.175146",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 13.990752935409546,
+      "create_time": "2024-12-17T08:04:24.208942",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 8.990940570831299,
+      "create_time": "2024-12-17T08:04:39.186159",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 8.871846914291382,
+      "create_time": "2024-12-17T08:04:39.069246",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 16.740682125091553,
+      "create_time": "2024-12-17T08:04:46.938327",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.6093831062316895,
+      "create_time": "2024-12-17T08:04:56.432831",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.576813459396362,
+      "create_time": "2024-12-17T08:04:56.909177",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 18.093452215194702,
+      "create_time": "2024-12-17T08:05:08.366405",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 13.820177555084229,
+      "create_time": "2024-12-17T08:05:22.491427",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 15.0447359085083,
+      "create_time": "2024-12-17T08:05:23.719181",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.902207374572754,
+      "create_time": "2024-12-17T08:05:42.188299",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 17.55159878730774,
+      "create_time": "2024-12-17T08:05:41.705030",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 14.349461555480957,
+      "create_time": "2024-12-17T08:05:42.176351",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.476266384124756,
+      "create_time": "2024-12-17T08:05:29.596708",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 8.517055034637451,
+      "create_time": "2024-12-17T08:05:50.962596",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 16.642874479293823,
+      "create_time": "2024-12-17T08:05:59.575471",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 23.980408430099487,
+      "create_time": "2024-12-17T08:06:16.494070",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 17.14106822013855,
+      "create_time": "2024-12-17T08:06:03.214644",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 9.014659643173218,
+      "create_time": "2024-12-17T08:07:05.977012",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 10.426001787185669,
+      "create_time": "2024-12-17T08:07:03.853691",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 8.629719018936157,
+      "create_time": "2024-12-17T08:07:31.325144",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 29.297168493270874,
+      "create_time": "2024-12-17T08:07:51.675531",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.742877244949341,
+      "create_time": "2024-12-17T08:07:42.831397",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 16.950389623641968,
+      "create_time": "2024-12-17T08:07:39.431976",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 20.071326971054077,
+      "create_time": "2024-12-17T08:07:42.459886",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 15.80485987663269,
+      "create_time": "2024-12-17T08:07:58.762331",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 25.381922721862793,
+      "create_time": "2024-12-17T08:08:08.637236",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 30.782206535339355,
+      "create_time": "2024-12-17T08:08:02.532546",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 3.520038366317749,
+      "create_time": "2024-12-17T08:09:31.275962",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 15.622523784637451,
+      "create_time": "2024-12-17T08:09:47.385166",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 20.94902229309082,
+      "create_time": "2024-12-17T08:10:51.450881",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 19.137353658676147,
+      "create_time": "2024-12-17T08:10:20.816793",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.898186922073364,
+      "create_time": "2024-12-17T08:10:20.660049",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 35.679558753967285,
+      "create_time": "2024-12-17T08:10:50.358012",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.158495664596558,
+      "create_time": "2024-12-17T08:11:01.520970",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.785954713821411,
+      "create_time": "2024-12-17T08:11:01.187697",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.2583333333333333,
+        0.03279411764705881
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 7.3201048374176025,
+      "create_time": "2024-12-17T08:11:04.264116",
+      "extra_info": {
+        "original_objectives": [
+          0.5166666666666666,
+          0.06558823529411761
+        ],
+        "reversed_objectives": [
+          0.4833333333333334,
+          0.9344117647058824
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 28.577430963516235,
+      "create_time": "2024-12-17T08:10:53.664862",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.102262258529663,
+      "create_time": "2024-12-17T08:11:26.820542",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 29.67865777015686,
+      "create_time": "2024-12-17T08:10:52.882945",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.8229804039001465,
+      "create_time": "2024-12-17T08:12:29.926086",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 18.348188638687134,
+      "create_time": "2024-12-17T08:12:35.918279",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 27.932196140289307,
+      "create_time": "2024-12-17T08:12:40.973366",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 19.717313766479492,
+      "create_time": "2024-12-17T08:12:22.658514",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 27.11516761779785,
+      "create_time": "2024-12-17T08:12:30.095668",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 24.174768924713135,
+      "create_time": "2024-12-17T08:12:41.748811",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 13.846951723098755,
+      "create_time": "2024-12-17T08:14:21.536167",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 8.304944515228271,
+      "create_time": "2024-12-17T08:14:15.980317",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.5,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 4.839787006378174,
+      "create_time": "2024-12-17T08:14:26.759722",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 15.63894534111023,
+      "create_time": "2024-12-17T08:14:45.878041",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10509554140127386,
+        0.029485294117647
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 5.307400703430176,
+      "create_time": "2024-12-17T08:14:49.606614",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.058970588235294
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.941029411764706
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.5884833335876465,
+      "create_time": "2024-12-17T08:15:08.686157",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 8.140117883682251,
+      "create_time": "2024-12-17T08:15:30.048297",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03455882352941181
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 6.215329647064209,
+      "create_time": "2024-12-17T08:15:28.358001",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06911764705882362
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9308823529411764
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.04470588235294115
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 20.669646501541138,
+      "create_time": "2024-12-17T08:15:37.510647",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0894117647058823
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9105882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.1049382716049383,
+        0.03470588235294114
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 13.489118814468384,
+      "create_time": "2024-12-17T08:15:45.230332",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.06941176470588228
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.9305882352941177
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 14.91042947769165,
+      "create_time": "2024-12-17T08:15:46.642538",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.10479041916167664,
+        0.0447794117647059
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 20.48000454902649,
+      "create_time": "2024-12-17T08:16:02.455956",
+      "extra_info": {
+        "original_objectives": [
+          0.20958083832335328,
+          0.0895588235294118
+        ],
+        "reversed_objectives": [
+          0.7904191616766467,
+          0.9104411764705882
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.5
+          },
+          {
+            "name": "objective_2",
+            "metric": "Label_Stability",
+            "group": "overall",
+            "weight": 0.5
+          }
+        ]
+      }
+    }
+  ]
+}

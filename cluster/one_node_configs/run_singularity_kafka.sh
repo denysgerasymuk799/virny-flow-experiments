@@ -3,6 +3,7 @@
 # Define variables
 NUM_WORKERS=$1
 SESSION=$2
+EMAIL=$3
 
 ZOOKEEPER_IMAGE="docker://bitnami/zookeeper:latest"
 KAFKA_IMAGE="docker://bitnami/kafka:latest"
@@ -29,7 +30,7 @@ singularity pull confluent-kafka.sif $INIT_IMAGE
   singularity exec \
       --bind ./$SESSION/tmp/zookeeper-data:/opt/bitnami/zookeeper/data \
       --bind ./$SESSION/tmp/zookeeper-logs:/opt/bitnami/zookeeper/logs \
-      --bind ../cluster/zoo.cfg:/opt/bitnami/zookeeper/conf/zoo.cfg \
+      --bind /home/$EMAIL/projects/virny-flow-experiments/cluster/zoo.cfg:/opt/bitnami/zookeeper/conf/zoo.cfg \
       zookeeper.sif \
       sh -c "ALLOW_ANONYMOUS_LOGIN=yes && /opt/bitnami/zookeeper/bin/zkServer.sh start"
 ) > ./$SESSION/zookeeper.log 2>&1 &
@@ -44,7 +45,7 @@ sleep 30
   echo "Starting Kafka Broker..."
   singularity exec \
       --bind ./$SESSION/tmp/kafka-logs:/tmp/kafka-logs \
-      --bind ../cluster/server.properties:/opt/bitnami/kafka/config/server.properties \
+      --bind /home/$EMAIL/projects/virny-flow-experiments/cluster/server.properties:/opt/bitnami/kafka/config/server.properties \
       kafka.sif \
       sh -c "/opt/bitnami/kafka/bin/kafka-server-start.sh /opt/bitnami/kafka/config/server.properties"
 ) > ./$SESSION/kafka-broker.log 2>&1 &

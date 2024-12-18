@@ -7,7 +7,6 @@ from ConfigSpace import ConfigurationSpace
 from openbox.utils.history import Observation
 
 from virny_flow.configs.structs import BOAdvisorConfig
-from virny_flow.core.utils.common_helpers import create_exp_config_obj
 from virny_flow.visualizations.viz_utils import build_visualizer, create_config_space
 
 
@@ -36,20 +35,19 @@ def load_history(filename: str, config_space: ConfigurationSpace, defined_object
 
 if __name__ == '__main__':
     # Input variables
-    exp_config_name = 'cost_model_exp1_folk_emp_w_acc_0_25_w_fair_0_75_w_openbox_weights'
+    exp_config_name = 'case_studies_exp_diabetes_cs3_w_acc_0_25_w_fair_0_5_w_stab_0_25'
+    run_num = 1
+    lp_name = 'None&NO_FAIRNESS_INTERVENTION&rf_clf'
+    history_filename = 'history_2024-12-17-08-51-45-766535.json'
+    max_trials = 200
+
     defined_objectives = [
         { "name": "objective_1", "metric": "F1", "group": "overall", "weight": 0.25 },
-        { "name": "objective_2", "metric": "Equalized_Odds_TPR", "group": "SEX&RAC1P", "weight": 0.75 }
+        { "name": "objective_2", "metric": "Equalized_Odds_TPR", "group": "Gender", "weight": 0.5 },
+        { "name": "objective_3", "metric": "Label_Stability", "group": "overall", "weight": 0.25 }
     ]
-    lp_name = 'None&DIR&lgbm_clf'
-    run_num = 2
-    history_filename = 'history_2024-12-15-18-30-18-476914.json'
-    surrogate_model_type = 'prf'  # 'gp' or 'prf'
+    surrogate_model_type = 'gp'  # 'gp' or 'prf'
     bo_advisor_config = BOAdvisorConfig()
-
-    # Read an experimental config
-    exp_config_yaml_path = pathlib.Path(__file__).parent.joinpath('configs').joinpath('exp_config.yaml')
-    exp_config = create_exp_config_obj(exp_config_yaml_path=exp_config_yaml_path)
 
     config_space = create_config_space(lp_name)
     history_path = f'../logs/history/{exp_config_name}/run_num_{str(run_num)}/{lp_name}/' + history_filename
@@ -57,7 +55,7 @@ if __name__ == '__main__':
 
     task_info = {
         'advisor_type': 'default',
-        'max_runs': exp_config.optimisation_args.max_trials,
+        'max_runs': max_trials,
         'max_runtime_per_trial': bo_advisor_config.max_runtime_per_trial,
         'surrogate_type': surrogate_model_type,
         'constraint_surrogate_type': None,

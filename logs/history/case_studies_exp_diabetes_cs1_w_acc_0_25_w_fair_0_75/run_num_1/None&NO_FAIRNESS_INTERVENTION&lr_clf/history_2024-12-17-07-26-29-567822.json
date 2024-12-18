@@ -1,0 +1,7813 @@
+{
+  "task_id": "OpenBox",
+  "num_objectives": 2,
+  "num_constraints": 0,
+  "ref_point": [
+    0.2,
+    0.2
+  ],
+  "meta_info": {},
+  "global_start_time": "2024-12-17T06:56:19.977023",
+  "observations": [
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4311835765838623,
+      "create_time": "2024-12-17T06:56:30.461695",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6641445159912109,
+      "create_time": "2024-12-17T06:56:30.700972",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6047916412353516,
+      "create_time": "2024-12-17T06:56:44.422360",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.46247363090515137,
+      "create_time": "2024-12-17T06:57:04.304980",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7311351299285889,
+      "create_time": "2024-12-17T06:57:04.546364",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7285120487213135,
+      "create_time": "2024-12-17T06:57:24.550243",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.34903907775878906,
+      "create_time": "2024-12-17T06:57:44.182914",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.3968164920806885,
+      "create_time": "2024-12-17T06:57:44.651730",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5615184307098389,
+      "create_time": "2024-12-17T06:58:04.395400",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6640756130218506,
+      "create_time": "2024-12-17T06:58:04.496941",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.49669981002807617,
+      "create_time": "2024-12-17T06:58:24.336322",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5541431903839111,
+      "create_time": "2024-12-17T06:58:24.413753",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6528301239013672,
+      "create_time": "2024-12-17T06:58:24.492684",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5683674812316895,
+      "create_time": "2024-12-17T06:58:24.629248",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6328189373016357,
+      "create_time": "2024-12-17T06:58:44.479258",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8060340881347656,
+      "create_time": "2024-12-17T06:58:44.651576",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4842710494995117,
+      "create_time": "2024-12-17T06:59:15.983038",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.645496129989624,
+      "create_time": "2024-12-17T06:59:16.134580",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4712953567504883,
+      "create_time": "2024-12-17T06:59:35.966671",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.44010162353515625,
+      "create_time": "2024-12-17T06:59:55.951741",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.3868236541748047,
+      "create_time": "2024-12-17T07:00:15.902472",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4067728519439697,
+      "create_time": "2024-12-17T07:00:15.934979",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5026547908782959,
+      "create_time": "2024-12-17T07:00:16.020529",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.47918128967285156,
+      "create_time": "2024-12-17T07:00:35.992092",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5420758724212646,
+      "create_time": "2024-12-17T07:00:36.081480",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8194231986999512,
+      "create_time": "2024-12-17T07:00:36.332996",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.9421377182006836,
+      "create_time": "2024-12-17T07:00:36.456070",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.361309289932251,
+      "create_time": "2024-12-17T07:00:55.897375",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5312085151672363,
+      "create_time": "2024-12-17T07:00:56.093846",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6834936141967773,
+      "create_time": "2024-12-17T07:00:56.202093",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5511355400085449,
+      "create_time": "2024-12-17T07:01:16.075004",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5948939323425293,
+      "create_time": "2024-12-17T07:01:16.144647",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5069429874420166,
+      "create_time": "2024-12-17T07:01:36.041943",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5998153686523438,
+      "create_time": "2024-12-17T07:01:36.133577",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.599992036819458,
+      "create_time": "2024-12-17T07:01:43.793810",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6716330051422119,
+      "create_time": "2024-12-17T07:01:43.899950",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7369754314422607,
+      "create_time": "2024-12-17T07:01:44.011164",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6722581386566162,
+      "create_time": "2024-12-17T07:01:44.022818",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8624110221862793,
+      "create_time": "2024-12-17T07:01:44.106176",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.9518835544586182,
+      "create_time": "2024-12-17T07:01:44.185417",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5275659561157227,
+      "create_time": "2024-12-17T07:01:44.838360",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.3534097671508789,
+      "create_time": "2024-12-17T07:01:44.980325",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.631251335144043,
+      "create_time": "2024-12-17T07:02:05.294151",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4486980438232422,
+      "create_time": "2024-12-17T07:02:05.113537",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.45795440673828125,
+      "create_time": "2024-12-17T07:02:17.872408",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5197134017944336,
+      "create_time": "2024-12-17T07:02:17.935647",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7125322818756104,
+      "create_time": "2024-12-17T07:02:18.109709",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.43947625160217285,
+      "create_time": "2024-12-17T07:02:37.844806",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.3546717166900635,
+      "create_time": "2024-12-17T07:02:41.202507",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8555223941802979,
+      "create_time": "2024-12-17T07:02:58.834695",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8006393909454346,
+      "create_time": "2024-12-17T07:03:18.242960",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6380279064178467,
+      "create_time": "2024-12-17T07:03:18.082154",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.322178602218628,
+      "create_time": "2024-12-17T07:03:18.879147",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.49037981033325195,
+      "create_time": "2024-12-17T07:03:37.910719",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.35460519790649414,
+      "create_time": "2024-12-17T07:03:37.780004",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5792779922485352,
+      "create_time": "2024-12-17T07:03:45.751699",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6584165096282959,
+      "create_time": "2024-12-17T07:03:58.086997",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7145252227783203,
+      "create_time": "2024-12-17T07:03:58.160150",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.9505903720855713,
+      "create_time": "2024-12-17T07:03:58.380117",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.9120020866394043,
+      "create_time": "2024-12-17T07:04:18.348648",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.993948221206665,
+      "create_time": "2024-12-17T07:04:18.437922",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.0605294704437256,
+      "create_time": "2024-12-17T07:04:18.492708",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 2.2774477005004883,
+      "create_time": "2024-12-17T07:04:39.803898",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7685670852661133,
+      "create_time": "2024-12-17T07:04:38.528873",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.3672647476196289,
+      "create_time": "2024-12-17T07:04:49.643609",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6325855255126953,
+      "create_time": "2024-12-17T07:05:09.828451",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.0989089012145996,
+      "create_time": "2024-12-17T07:05:10.312005",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5397138595581055,
+      "create_time": "2024-12-17T07:06:09.736444",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7536413669586182,
+      "create_time": "2024-12-17T07:06:09.991413",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7888906002044678,
+      "create_time": "2024-12-17T07:06:09.986246",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.0039541721343994,
+      "create_time": "2024-12-17T07:06:30.282653",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.2314767837524414,
+      "create_time": "2024-12-17T07:06:30.509979",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.892646074295044,
+      "create_time": "2024-12-17T07:06:30.198026",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.913395881652832,
+      "create_time": "2024-12-17T07:06:30.208899",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7583534717559814,
+      "create_time": "2024-12-17T07:06:30.026846",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.7137055397033691,
+      "create_time": "2024-12-17T07:06:51.095831",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5478971004486084,
+      "create_time": "2024-12-17T07:07:09.771854",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.37512755393981934,
+      "create_time": "2024-12-17T07:07:27.129206",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4718613624572754,
+      "create_time": "2024-12-17T07:07:27.235088",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5139040946960449,
+      "create_time": "2024-12-17T07:07:27.288266",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4187612533569336,
+      "create_time": "2024-12-17T07:07:47.188201",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.3658730983734131,
+      "create_time": "2024-12-17T07:07:47.129653",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5826902389526367,
+      "create_time": "2024-12-17T07:07:54.786016",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5836193561553955,
+      "create_time": "2024-12-17T07:08:07.876826",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8403832912445068,
+      "create_time": "2024-12-17T07:08:07.615133",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6366918087005615,
+      "create_time": "2024-12-17T07:08:07.426485",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8175680637359619,
+      "create_time": "2024-12-17T07:08:07.583103",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.9173901081085205,
+      "create_time": "2024-12-17T07:08:27.693278",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7255632877349854,
+      "create_time": "2024-12-17T07:08:27.496338",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4620952606201172,
+      "create_time": "2024-12-17T07:08:27.240148",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.619556188583374,
+      "create_time": "2024-12-17T07:08:47.401234",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8288943767547607,
+      "create_time": "2024-12-17T07:08:47.633243",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.121363878250122,
+      "create_time": "2024-12-17T07:09:07.964653",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.1687378883361816,
+      "create_time": "2024-12-17T07:09:08.102148",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.619255781173706,
+      "create_time": "2024-12-17T07:09:13.859128",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5744800567626953,
+      "create_time": "2024-12-17T07:09:27.374168",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8917398452758789,
+      "create_time": "2024-12-17T07:09:27.687708",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.2310433387756348,
+      "create_time": "2024-12-17T07:09:48.088980",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.0174179077148438,
+      "create_time": "2024-12-17T07:09:47.890064",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.38863134384155273,
+      "create_time": "2024-12-17T07:09:58.719534",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.3105788230895996,
+      "create_time": "2024-12-17T07:10:25.790039",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7674260139465332,
+      "create_time": "2024-12-17T07:10:26.236813",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5296471118927002,
+      "create_time": "2024-12-17T07:10:27.349904",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.593280553817749,
+      "create_time": "2024-12-17T07:10:27.426006",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7139885425567627,
+      "create_time": "2024-12-17T07:10:27.534043",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.37652063369750977,
+      "create_time": "2024-12-17T07:10:47.228515",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.748767614364624,
+      "create_time": "2024-12-17T07:10:47.600979",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.4634394645690918,
+      "create_time": "2024-12-17T07:11:08.544333",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5422046184539795,
+      "create_time": "2024-12-17T07:11:33.057703",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6353857517242432,
+      "create_time": "2024-12-17T07:12:08.828751",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6189353466033936,
+      "create_time": "2024-12-17T07:12:15.993596",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6281554698944092,
+      "create_time": "2024-12-17T07:12:21.803714",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5713403224945068,
+      "create_time": "2024-12-17T07:12:41.700913",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.6865870952606201,
+      "create_time": "2024-12-17T07:13:03.014406",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.3965578079223633,
+      "create_time": "2024-12-17T07:13:02.544186",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6630496978759766,
+      "create_time": "2024-12-17T07:13:21.803630",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5147452354431152,
+      "create_time": "2024-12-17T07:13:21.657208",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7784197330474854,
+      "create_time": "2024-12-17T07:13:21.930889",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7324123382568359,
+      "create_time": "2024-12-17T07:13:22.005890",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.42752766609191895,
+      "create_time": "2024-12-17T07:13:22.057994",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.728675127029419,
+      "create_time": "2024-12-17T07:13:41.902335",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.45607900619506836,
+      "create_time": "2024-12-17T07:13:41.618045",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6968071460723877,
+      "create_time": "2024-12-17T07:13:59.941688",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8379619121551514,
+      "create_time": "2024-12-17T07:14:00.052782",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6305155754089355,
+      "create_time": "2024-12-17T07:14:29.779028",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6070737838745117,
+      "create_time": "2024-12-17T07:14:39.816936",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7095494270324707,
+      "create_time": "2024-12-17T07:14:39.920409",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.457122802734375,
+      "create_time": "2024-12-17T07:15:31.885857",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6193702220916748,
+      "create_time": "2024-12-17T07:15:50.066352",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.841569185256958,
+      "create_time": "2024-12-17T07:15:40.116109",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.9998843669891357,
+      "create_time": "2024-12-17T07:15:40.276209",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8718690872192383,
+      "create_time": "2024-12-17T07:15:50.336868",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4714689254760742,
+      "create_time": "2024-12-17T07:15:59.703532",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7407727241516113,
+      "create_time": "2024-12-17T07:15:59.977711",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8708460330963135,
+      "create_time": "2024-12-17T07:16:00.103471",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.38788461685180664,
+      "create_time": "2024-12-17T07:16:19.632028",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7023956775665283,
+      "create_time": "2024-12-17T07:16:28.743119",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.3437047004699707,
+      "create_time": "2024-12-17T07:16:33.998188",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.35257601737976074,
+      "create_time": "2024-12-17T07:16:39.594824",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5884621143341064,
+      "create_time": "2024-12-17T07:16:39.960363",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5427119731903076,
+      "create_time": "2024-12-17T07:16:44.284380",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.1322674751281738,
+      "create_time": "2024-12-17T07:17:00.528375",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.528794527053833,
+      "create_time": "2024-12-17T07:17:00.981864",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.2490649223327637,
+      "create_time": "2024-12-17T07:17:20.530948",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.0997371673583984,
+      "create_time": "2024-12-17T07:17:20.447868",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.46854686737060547,
+      "create_time": "2024-12-17T07:17:39.734987",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5625355243682861,
+      "create_time": "2024-12-17T07:17:39.829671",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6304385662078857,
+      "create_time": "2024-12-17T07:17:59.906993",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.35944557189941406,
+      "create_time": "2024-12-17T07:17:59.652061",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5651028156280518,
+      "create_time": "2024-12-17T07:18:04.968537",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8255608081817627,
+      "create_time": "2024-12-17T07:18:07.333546",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6069962978363037,
+      "create_time": "2024-12-17T07:18:07.126203",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4916856288909912,
+      "create_time": "2024-12-17T07:18:07.306034",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7187678813934326,
+      "create_time": "2024-12-17T07:18:07.224737",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8877699375152588,
+      "create_time": "2024-12-17T07:18:07.426954",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6628625392913818,
+      "create_time": "2024-12-17T07:18:19.354929",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.0870082378387451,
+      "create_time": "2024-12-17T07:18:19.801413",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8855202198028564,
+      "create_time": "2024-12-17T07:18:19.639671",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4649193286895752,
+      "create_time": "2024-12-17T07:18:49.158326",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6807515621185303,
+      "create_time": "2024-12-17T07:18:59.711748",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8405647277832031,
+      "create_time": "2024-12-17T07:18:49.557233",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.46402454376220703,
+      "create_time": "2024-12-17T07:19:19.193899",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.43022990226745605,
+      "create_time": "2024-12-17T07:19:25.590638",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.49210309982299805,
+      "create_time": "2024-12-17T07:19:39.224517",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.741443395614624,
+      "create_time": "2024-12-17T07:20:10.084007",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5189862251281738,
+      "create_time": "2024-12-17T07:20:09.864934",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.3098158836364746,
+      "create_time": "2024-12-17T07:20:19.059662",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.3784329891204834,
+      "create_time": "2024-12-17T07:20:31.763729",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6930978298187256,
+      "create_time": "2024-12-17T07:20:34.931023",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4377470016479492,
+      "create_time": "2024-12-17T07:20:44.811446",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.552635908126831,
+      "create_time": "2024-12-17T07:20:39.315840",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.59201979637146,
+      "create_time": "2024-12-17T07:21:19.354277",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.33308935165405273,
+      "create_time": "2024-12-17T07:21:19.099445",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5917916297912598,
+      "create_time": "2024-12-17T07:21:34.177812",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.2361476421356201,
+      "create_time": "2024-12-17T07:21:40.039022",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6350052356719971,
+      "create_time": "2024-12-17T07:22:04.672515",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.8744313716888428,
+      "create_time": "2024-12-17T07:22:08.624900",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.9393889904022217,
+      "create_time": "2024-12-17T07:22:08.701724",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4315626621246338,
+      "create_time": "2024-12-17T07:22:08.213274",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4958765506744385,
+      "create_time": "2024-12-17T07:22:08.265084",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5989251136779785,
+      "create_time": "2024-12-17T07:22:08.356512",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.35279035568237305,
+      "create_time": "2024-12-17T07:22:06.228134",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5406270027160645,
+      "create_time": "2024-12-17T07:22:10.348403",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.589914083480835,
+      "create_time": "2024-12-17T07:22:28.354787",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.37148213386535645,
+      "create_time": "2024-12-17T07:22:28.468375",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.4720730781555176,
+      "create_time": "2024-12-17T07:22:28.240259",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "lbfgs"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.40373754501342773,
+      "create_time": "2024-12-17T07:22:48.180309",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.1096141338348389,
+      "create_time": "2024-12-17T07:23:09.101539",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05254777070063693,
+        0.19871794871794876
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 1.3186566829681396,
+      "create_time": "2024-12-17T07:23:49.284209",
+      "extra_info": {
+        "original_objectives": [
+          0.21019108280254772,
+          0.264957264957265
+        ],
+        "reversed_objectives": [
+          0.7898089171974523,
+          0.735042735042735
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6286463737487793,
+      "create_time": "2024-12-17T07:24:08.441318",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7830219268798828,
+      "create_time": "2024-12-17T07:24:29.681094",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.9880256652832031,
+      "create_time": "2024-12-17T07:24:29.915018",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5198535919189453,
+      "create_time": "2024-12-17T07:24:57.374042",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "l2",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.25,
+        0.0
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.5834579467773438,
+      "create_time": "2024-12-17T07:24:48.522360",
+      "extra_info": {
+        "original_objectives": [
+          1.0,
+          0.0
+        ],
+        "reversed_objectives": [
+          0.0,
+          1.0
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.001,
+        "model__penalty": "None",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.6755115985870361,
+      "create_time": "2024-12-17T07:24:42.310100",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.937485933303833,
+      "create_time": "2024-12-17T07:25:08.839701",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "sag"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.37194013595581055,
+      "create_time": "2024-12-17T07:25:08.280023",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.01,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.11507936507936509,
+        0.39102564102564097
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.3443734645843506,
+      "create_time": "2024-12-17T07:25:28.201183",
+      "extra_info": {
+        "original_objectives": [
+          0.46031746031746035,
+          0.5213675213675213
+        ],
+        "reversed_objectives": [
+          0.5396825396825397,
+          0.4786324786324787
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 0.1,
+        "model__penalty": "None",
+        "model__solver": "saga"
+      },
+      "objectives": [
+        0.04878048780487804,
+        0.24679487179487175
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7173573970794678,
+      "create_time": "2024-12-17T07:25:28.589630",
+      "extra_info": {
+        "original_objectives": [
+          0.19512195121951215,
+          0.329059829059829
+        ],
+        "reversed_objectives": [
+          0.8048780487804879,
+          0.670940170940171
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "model__C": 1,
+        "model__penalty": "l2",
+        "model__solver": "newton-cg"
+      },
+      "objectives": [
+        0.05246913580246915,
+        0.24038461538461536
+      ],
+      "constraints": null,
+      "trial_state": 0,
+      "elapsed_time": 0.7641346454620361,
+      "create_time": "2024-12-17T07:26:08.773042",
+      "extra_info": {
+        "original_objectives": [
+          0.2098765432098766,
+          0.3205128205128205
+        ],
+        "reversed_objectives": [
+          0.7901234567901234,
+          0.6794871794871795
+        ],
+        "exp_config_objectives": [
+          {
+            "name": "objective_1",
+            "metric": "F1",
+            "group": "overall",
+            "weight": 0.25
+          },
+          {
+            "name": "objective_2",
+            "metric": "Equalized_Odds_TPR",
+            "group": "Gender",
+            "weight": 0.75
+          }
+        ]
+      }
+    }
+  ]
+}
