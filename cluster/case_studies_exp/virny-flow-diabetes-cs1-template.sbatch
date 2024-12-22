@@ -19,7 +19,7 @@ module purge
 # ====================================================================================
 # Default parameters
 # ====================================================================================
-EXP_CONFIG_NAME=<EXP_NAME>_<DATASET>_<CASE_STUDY>_<EXP_CONFIG_SUFFIX>
+EXP_CONFIG_NAME=<EXP_NAME>_<DATASET>_<CASE_STUDY>_<EXP_CONFIG_SUFFIX>_gandalf
 NUM_WORKERS=8
 NUM_CPUS_PER_WORKER=4
 CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
@@ -46,7 +46,7 @@ pipeline_args:
   sensitive_attrs_for_intervention: ["Gender"]
   null_imputers: []
   fairness_interventions: []
-  models: ["lr_clf", "rf_clf", "lgbm_clf"]
+  models: ["gandalf_clf"]
 
 optimisation_args:
   ref_point: [0.20, 0.20]

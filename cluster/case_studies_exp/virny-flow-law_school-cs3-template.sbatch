@@ -21,6 +21,7 @@ module purge
 # ====================================================================================
 EXP_CONFIG_NAME=<EXP_NAME>_<DATASET>_<CASE_STUDY>_<EXP_CONFIG_SUFFIX>
 NUM_WORKERS=8
+NUM_CPUS_PER_WORKER=4
 CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
 EMAIL=<EMAIL>
 SESSION=${SLURM_JOB_ID}_${EXP_CONFIG_NAME}
@@ -75,4 +76,4 @@ bash /home/$EMAIL/projects/virny-flow-experiments/cluster/$CLUSTER_TYPE/run_sing
 singularity exec \
 	    --overlay /scratch/$EMAIL/virny_flow_project/vldb_sds_env.ext3:ro \
 	    /scratch/work/public/singularity/ubuntu-20.04.1.sif \
-	    /bin/bash -c "source /ext3/env.sh; bash /home/$EMAIL/projects/virny-flow-experiments/cluster/$CLUSTER_TYPE/run_virny_flow_cluster.sh $NUM_WORKERS $SESSION $EMAIL"
+	    /bin/bash -c "source /ext3/env.sh; bash /home/$EMAIL/projects/virny-flow-experiments/cluster/$CLUSTER_TYPE/run_virny_flow_cluster.sh $NUM_WORKERS $NUM_CPUS_PER_WORKER $SESSION $EMAIL"
