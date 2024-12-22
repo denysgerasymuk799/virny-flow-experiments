@@ -8,10 +8,10 @@
 #SBATCH --cpus-per-task=36
 #SBATCH --time=48:00:00
 #SBATCH --mail-type=END
-#SBATCH --mail-user=<EMAIL>@nyu.edu
+#SBATCH --mail-user=dh3553@nyu.edu
 #SBATCH --account=pr_152_general
-#SBATCH --job-name=<EXP_NAME>_<DATASET>_<CASE_STUDY>_<EXP_CONFIG_SUFFIX>
-#SBATCH --output=%j_<EXP_NAME>_<DATASET>_<CASE_STUDY>_<EXP_CONFIG_SUFFIX>.out
+#SBATCH --job-name=test_diabetes
+#SBATCH --output=%j_test_diabetes.out
 
 module purge
 
@@ -19,11 +19,11 @@ module purge
 # ====================================================================================
 # Default parameters
 # ====================================================================================
-EXP_CONFIG_NAME=<EXP_NAME>_<DATASET>_<CASE_STUDY>_<EXP_CONFIG_SUFFIX>
+EXP_CONFIG_NAME=test_diabetes
 NUM_WORKERS=8
 NUM_CPUS_PER_WORKER=4
 CLUSTER_TYPE=one_node_configs  # one_node_configs or many_node_configs
-EMAIL=<EMAIL>
+EMAIL=dh3553
 SESSION=${SLURM_JOB_ID}_${EXP_CONFIG_NAME}
 
 
@@ -38,22 +38,22 @@ mkdir -p ./$SESSION/tmp/kafka-logs/
 cat <<EOL > ./$SESSION/exp_config.yaml
 common_args:
   exp_config_name: "$EXP_CONFIG_NAME"
-  run_nums: [<RUN_NUM>]
+  run_nums: [1]
   secrets_path: "/home/$EMAIL/projects/virny-flow-experiments/scripts/configs/secrets.env"
 
 pipeline_args:
-  dataset: "<DATASET>"
+  dataset: "diabetes"
   sensitive_attrs_for_intervention: ["Gender"]
   null_imputers: []
   fairness_interventions: []
-  models: ["lr_clf", "rf_clf", "lgbm_clf"]
+  models: ["lr_clf", "rf_clf", "lgbm_clf", "gandalf_clf"]
 
 optimisation_args:
   ref_point: [0.20, 0.20]
   objectives:
-    - { name: "objective_1", metric: "F1", group: "overall", weight: <W1> }
-    - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "Gender", weight: <W2> }
-  max_trials: <MAX_TRIALS>
+    - { name: "objective_1", metric: "F1", group: "overall", weight: 0.25 }
+    - { name: "objective_2", metric: "Equalized_Odds_TPR", group: "Gender", weight: 0.75 }
+  max_trials: 20
   num_workers: $NUM_WORKERS
   num_pp_candidates: 2
   training_set_fractions_for_halting: [0.7, 0.8, 0.9, 1.0]
