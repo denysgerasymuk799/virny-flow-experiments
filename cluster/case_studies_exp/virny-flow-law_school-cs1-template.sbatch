@@ -52,7 +52,7 @@ optimisation_args:
   ref_point: [0.10, 0.30]
   objectives:
     - { name: "objective_1", metric: "F1", group: "overall", weight: <W1> }
-    - { name: "objective_2", metric: "Selection_Rate_Difference", group: "male", weight: <W2> }
+    - { name: "objective_2", metric: "Statistical_Parity_Difference", group: "male", weight: <W2> }
   max_trials: <MAX_TRIALS>
   num_workers: $NUM_WORKERS
   num_pp_candidates: 2

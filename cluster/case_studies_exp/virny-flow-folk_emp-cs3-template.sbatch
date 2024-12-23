@@ -53,7 +53,7 @@ optimisation_args:
   objectives:
     - { name: "objective_1", metric: "F1", group: "overall", weight: <W1> }
     - { name: "objective_2", metric: "Equalized_Odds_FNR", group: "SEX&RAC1P", weight: <W2> }
-    - { name: "objective_3", metric: "Selection_Rate_Difference", group: "SEX&RAC1P", weight: <W3> }
+    - { name: "objective_3", metric: "Statistical_Parity_Difference", group: "SEX&RAC1P", weight: <W3> }
   max_trials: <MAX_TRIALS>
   num_workers: $NUM_WORKERS
   num_pp_candidates: 2
