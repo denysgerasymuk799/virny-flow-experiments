@@ -1,8 +1,118 @@
 import pandas as pd
 from duckdb import query as sqldf
 
+from virny_flow.configs.constants import PHYSICAL_PIPELINE_OBSERVATIONS_TABLE, ALL_EXPERIMENT_METRICS_TABLE
 from virny_flow.core.custom_classes.core_db_client import CoreDBClient
-from virny_flow.visualizations.use_case_queries import get_best_pps_per_lp_and_run_num
+
+
+def get_best_pps_per_lp_and_run_num_query(exp_config_name: str):
+    return [
+        # Step 1: Filter documents in PHYSICAL_PIPELINE_OBSERVATIONS_TABLE with the defined exp_config_name
+        {
+            "$match": {
+                "exp_config_name": exp_config_name,
+                "deletion_flag": False
+            }
+        },
+        # Step 2: Sort by compound_pp_quality in descending order.
+        # Sorting before grouping helps make the first document in each group to have max compound_pp_quality.
+        {
+            "$sort": { "compound_pp_quality": -1 },
+        },
+        # Step 3: Group to get the maximum `compound_pp_quality` per `exp_config_name`, `logical_pipeline_uuid`, and `run_num`
+        {
+            "$group": {
+                "_id": {
+                    "exp_config_name": "$exp_config_name",
+                    "run_num": "$run_num",
+                    "logical_pipeline_uuid": "$logical_pipeline_uuid",
+                    "logical_pipeline_name": "$logical_pipeline_name",
+                },
+                "best_pipeline_doc": {
+                    "$first": {
+                        "physical_pipeline_uuid": "$physical_pipeline_uuid",
+                        "run_num": "$run_num",
+                        "compound_pp_quality": "$compound_pp_quality"
+                    }
+                }
+            }
+        },
+        # Step 4: Replace root with the captured document
+        {
+            "$replaceRoot": {
+                "newRoot": {
+                    "exp_config_name": "$_id.exp_config_name",
+                    "run_num": "$_id.run_num",
+                    "logical_pipeline_uuid": "$_id.logical_pipeline_uuid",
+                    "logical_pipeline_name": "$_id.logical_pipeline_name",
+                    "physical_pipeline_uuid": "$best_pipeline_doc.physical_pipeline_uuid",
+                    "compound_pp_quality": "$best_pipeline_doc.compound_pp_quality"
+                }
+            }
+        },
+        # Step 5: Join with `all_experiment_metrics` based on `physical_pipeline_uuid`
+        {
+            "$lookup": {
+                "from": ALL_EXPERIMENT_METRICS_TABLE,
+                "let": { "logical_name": "$logical_pipeline_name", "physical_uuid": "$physical_pipeline_uuid", "physical_run_num": "$run_num" },
+                "pipeline": [
+                    { "$match": {
+                        "$expr": {
+                            "$and": [
+                                { "$eq": ["$exp_config_name", exp_config_name] },
+                                { "$eq": ["$run_num", "$$physical_run_num"] },
+                                { "$eq": ["$logical_pipeline_name", "$$logical_name"] },
+                                { "$eq": ["$physical_pipeline_uuid", "$$physical_uuid"] },
+                            ]
+                        }
+                    }}
+                ],
+                "as": "experiment_metrics"
+            }
+        },
+        # Step 6: Unwind to get one document per metric in `all_experiment_metrics`
+        {
+            "$unwind": "$experiment_metrics"
+        },
+        # Step 7: Project only the fields you need (optional)
+        {
+            "$project": {
+                "_id": 0,
+                "exp_config_name": 1,
+                "run_num": 1,
+                "logical_pipeline_uuid": 1,
+                "physical_pipeline_uuid": 1,
+                "compound_pp_quality": 1,
+                "experiment_metrics.logical_pipeline_name": 1,
+                "experiment_metrics.dataset_name": 1,
+                "experiment_metrics.null_imputer_name": 1,
+                "experiment_metrics.fairness_intervention_name": 1,
+                "experiment_metrics.model_name": 1,
+                "experiment_metrics.subgroup": 1,
+                "experiment_metrics.metric": 1,
+                "experiment_metrics.metric_value": 1,
+                "experiment_metrics.runtime_in_mins": 1,
+            }
+        }
+    ]
+
+
+def get_best_pps_per_lp_and_run_num(db_client: CoreDBClient, exp_config_name: str):
+    pipeline = get_best_pps_per_lp_and_run_num_query(exp_config_name)
+
+    # Run the aggregation pipeline
+    results = list(db_client.client[db_client.db_name][PHYSICAL_PIPELINE_OBSERVATIONS_TABLE].aggregate(pipeline))
+
+    # Convert results to a pandas DataFrame
+    all_metrics_df = pd.json_normalize(results)
+    all_metrics_df.columns = [col.replace("experiment_metrics.", "") for col in all_metrics_df.columns]
+
+    # Create columns based on values in the Subgroup column
+    pivoted_all_metrics_df = all_metrics_df.pivot(columns='subgroup', values='metric_value',
+                                                  index=[col for col in all_metrics_df.columns
+                                                         if col not in ('subgroup', 'metric_value')]).reset_index()
+
+    return pivoted_all_metrics_df
 
 
 def get_best_lps_for_exp_config(db_client: CoreDBClient, exp_config_name: str):
@@ -10,29 +120,14 @@ def get_best_lps_for_exp_config(db_client: CoreDBClient, exp_config_name: str):
                                                                      exp_config_name=exp_config_name)
     print('best_pps_per_lp_and_run_num_df.shape:', best_pps_per_lp_and_run_num_df.shape)
 
-    # Get best lp for the specific exp_config_name
-    max_lp_avg_compound_pp_quality = sqldf("""
-        SELECT MAX(avg_compound_pp_quality) AS max_lp_avg_compound_pp_quality
-        FROM (
-            SELECT logical_pipeline_uuid, AVG(compound_pp_quality) as avg_compound_pp_quality
-            FROM best_pps_per_lp_and_run_num_df
-            GROUP BY logical_pipeline_uuid
-        ) AS avg_tbl
-    """).to_df().iloc[0, 0]
-    print('max_lp_avg_compound_pp_quality:', max_lp_avg_compound_pp_quality)
+    # Find the maximum compound_pp_quality per run_num
+    max_quality_per_run = best_pps_per_lp_and_run_num_df.groupby("run_num")["compound_pp_quality"].transform("max")
 
-    best_logical_pipeline_uuid = sqldf(f"""
-        SELECT logical_pipeline_uuid
-        FROM (
-            SELECT logical_pipeline_uuid, AVG(compound_pp_quality) AS avg_compound_pp_quality
-            FROM best_pps_per_lp_and_run_num_df
-            GROUP BY logical_pipeline_uuid
-        ) AS avg_tbl
-        WHERE avg_compound_pp_quality = {max_lp_avg_compound_pp_quality}
-    """).to_df().iloc[0, 0]
-    print('best_logical_pipeline_uuid:', best_logical_pipeline_uuid)
+    # Filter rows where compound_pp_quality matches the maximum for that run_num
+    best_lp_per_run_all = best_pps_per_lp_and_run_num_df[best_pps_per_lp_and_run_num_df["compound_pp_quality"] == max_quality_per_run]
+    print('best_lp_per_run_all.shape:', best_lp_per_run_all.shape)
 
-    return best_pps_per_lp_and_run_num_df[best_pps_per_lp_and_run_num_df['logical_pipeline_uuid'] == best_logical_pipeline_uuid]
+    return best_lp_per_run_all
 
 
 def get_best_lps_per_exp_config(secrets_path: str, exp_config_names: list):

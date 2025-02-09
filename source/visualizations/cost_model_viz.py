@@ -86,7 +86,12 @@ def create_box_plot_per_dataset_and_case_study(to_plot: pd.DataFrame, exp_name: 
                                                      disparity_metric_name=metric_name,
                                                      group=group)
         y_column = 'disparity_metric_value'
-        title = metric_name
+        if metric_name.lower().startswith('equalized_odds_'):
+            title = metric_name[-3:] + 'D'
+        elif metric_name.lower() == 'selection_rate_difference':
+            title = 'SRD'
+        else:
+            title = metric_name
 
     # Create the box plot
     box_plot = alt.Chart(filtered_df).mark_boxplot(
