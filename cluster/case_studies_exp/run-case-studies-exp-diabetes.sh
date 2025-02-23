@@ -1,25 +1,25 @@
 # Define the list of tuples (exp_name, dataset, case_study, run_num, w1, w2, w3, exp_config_suffix, max_trials, email)
 declare -a job_configs=(
-    # Case study 1
-    "case_studies_exp diabetes cs1 1 0.5 0.5 0.0 w_acc_0_5_w_fair_0_5 200 dh3553"
-    "case_studies_exp diabetes cs1 1 0.25 0.75 0.0 w_acc_0_25_w_fair_0_75 200 dh3553"
-    "case_studies_exp diabetes cs1 1 0.75 0.25 0.0 w_acc_0_75_w_fair_0_25 200 dh3553"
-
-    "case_studies_exp diabetes cs1 2 0.5 0.5 0.0 w_acc_0_5_w_fair_0_5 200 dh3553"
-    "case_studies_exp diabetes cs1 2 0.25 0.75 0.0 w_acc_0_25_w_fair_0_75 200 dh3553"
-    "case_studies_exp diabetes cs1 2 0.75 0.25 0.0 w_acc_0_75_w_fair_0_25 200 dh3553"
-
-    "case_studies_exp diabetes cs1 3 0.5 0.5 0.0 w_acc_0_5_w_fair_0_5 200 dh3553"
-    "case_studies_exp diabetes cs1 3 0.25 0.75 0.0 w_acc_0_25_w_fair_0_75 200 dh3553"
-    "case_studies_exp diabetes cs1 3 0.75 0.25 0.0 w_acc_0_75_w_fair_0_25 200 dh3553"
-
-    "case_studies_exp diabetes cs1 4 0.5 0.5 0.0 w_acc_0_5_w_fair_0_5 200 dh3553"
-    "case_studies_exp diabetes cs1 4 0.25 0.75 0.0 w_acc_0_25_w_fair_0_75 200 dh3553"
-    "case_studies_exp diabetes cs1 4 0.75 0.25 0.0 w_acc_0_75_w_fair_0_25 200 dh3553"
-
-    "case_studies_exp diabetes cs1 5 0.5 0.5 0.0 w_acc_0_5_w_fair_0_5 200 dh3553"
-    "case_studies_exp diabetes cs1 5 0.25 0.75 0.0 w_acc_0_25_w_fair_0_75 200 dh3553"
-    "case_studies_exp diabetes cs1 5 0.75 0.25 0.0 w_acc_0_75_w_fair_0_25 200 dh3553"
+#    # Case study 1
+#    "case_studies_exp diabetes cs1 1 0.5 0.5 0.0 w_acc_0_5_w_fair_0_5 200 dh3553"
+#    "case_studies_exp diabetes cs1 1 0.25 0.75 0.0 w_acc_0_25_w_fair_0_75 200 dh3553"
+#    "case_studies_exp diabetes cs1 1 0.75 0.25 0.0 w_acc_0_75_w_fair_0_25 200 dh3553"
+#
+#    "case_studies_exp diabetes cs1 2 0.5 0.5 0.0 w_acc_0_5_w_fair_0_5 200 dh3553"
+#    "case_studies_exp diabetes cs1 2 0.25 0.75 0.0 w_acc_0_25_w_fair_0_75 200 dh3553"
+#    "case_studies_exp diabetes cs1 2 0.75 0.25 0.0 w_acc_0_75_w_fair_0_25 200 dh3553"
+#
+#    "case_studies_exp diabetes cs1 3 0.5 0.5 0.0 w_acc_0_5_w_fair_0_5 200 dh3553"
+#    "case_studies_exp diabetes cs1 3 0.25 0.75 0.0 w_acc_0_25_w_fair_0_75 200 dh3553"
+#    "case_studies_exp diabetes cs1 3 0.75 0.25 0.0 w_acc_0_75_w_fair_0_25 200 dh3553"
+#
+#    "case_studies_exp diabetes cs1 4 0.5 0.5 0.0 w_acc_0_5_w_fair_0_5 200 dh3553"
+#    "case_studies_exp diabetes cs1 4 0.25 0.75 0.0 w_acc_0_25_w_fair_0_75 200 dh3553"
+#    "case_studies_exp diabetes cs1 4 0.75 0.25 0.0 w_acc_0_75_w_fair_0_25 200 dh3553"
+#
+#    "case_studies_exp diabetes cs1 5 0.5 0.5 0.0 w_acc_0_5_w_fair_0_5 200 dh3553"
+#    "case_studies_exp diabetes cs1 5 0.25 0.75 0.0 w_acc_0_25_w_fair_0_75 200 dh3553"
+#    "case_studies_exp diabetes cs1 5 0.75 0.25 0.0 w_acc_0_75_w_fair_0_25 200 dh3553"
 
     # Case study 2
     "case_studies_exp diabetes cs2 1 0.5 0.5 0.0 w_acc_0_5_w_stab_0_5 200 dh3553"
@@ -43,27 +43,27 @@ declare -a job_configs=(
     "case_studies_exp diabetes cs2 5 0.75 0.25 0.0 w_acc_0_75_w_stab_0_25 200 dh3553"
 
     # Case study 3
-    "case_studies_exp diabetes cs3 1 0.33 0.33 0.33 w_acc_0_33_w_fair_0_33_w_stab_0_33 200 dh3553"
+#    "case_studies_exp diabetes cs3 1 0.33 0.33 0.33 w_acc_0_33_w_fair_0_33_w_stab_0_33 200 dh3553"
     "case_studies_exp diabetes cs3 1 0.5 0.25 0.25 w_acc_0_5_w_fair_0_25_w_stab_0_25 200 dh3553"
     "case_studies_exp diabetes cs3 1 0.25 0.5 0.25 w_acc_0_25_w_fair_0_5_w_stab_0_25 200 dh3553"
     "case_studies_exp diabetes cs3 1 0.25 0.25 0.5 w_acc_0_25_w_fair_0_25_w_stab_0_5 200 dh3553"
 
-    "case_studies_exp diabetes cs3 2 0.33 0.33 0.33 w_acc_0_33_w_fair_0_33_w_stab_0_33 200 dh3553"
+#    "case_studies_exp diabetes cs3 2 0.33 0.33 0.33 w_acc_0_33_w_fair_0_33_w_stab_0_33 200 dh3553"
     "case_studies_exp diabetes cs3 2 0.5 0.25 0.25 w_acc_0_5_w_fair_0_25_w_stab_0_25 200 dh3553"
     "case_studies_exp diabetes cs3 2 0.25 0.5 0.25 w_acc_0_25_w_fair_0_5_w_stab_0_25 200 dh3553"
     "case_studies_exp diabetes cs3 2 0.25 0.25 0.5 w_acc_0_25_w_fair_0_25_w_stab_0_5 200 dh3553"
 
-    "case_studies_exp diabetes cs3 3 0.33 0.33 0.33 w_acc_0_33_w_fair_0_33_w_stab_0_33 200 dh3553"
+#    "case_studies_exp diabetes cs3 3 0.33 0.33 0.33 w_acc_0_33_w_fair_0_33_w_stab_0_33 200 dh3553"
     "case_studies_exp diabetes cs3 3 0.5 0.25 0.25 w_acc_0_5_w_fair_0_25_w_stab_0_25 200 dh3553"
     "case_studies_exp diabetes cs3 3 0.25 0.5 0.25 w_acc_0_25_w_fair_0_5_w_stab_0_25 200 dh3553"
     "case_studies_exp diabetes cs3 3 0.25 0.25 0.5 w_acc_0_25_w_fair_0_25_w_stab_0_5 200 dh3553"
 
-    "case_studies_exp diabetes cs3 4 0.33 0.33 0.33 w_acc_0_33_w_fair_0_33_w_stab_0_33 200 dh3553"
+#    "case_studies_exp diabetes cs3 4 0.33 0.33 0.33 w_acc_0_33_w_fair_0_33_w_stab_0_33 200 dh3553"
     "case_studies_exp diabetes cs3 4 0.5 0.25 0.25 w_acc_0_5_w_fair_0_25_w_stab_0_25 200 dh3553"
     "case_studies_exp diabetes cs3 4 0.25 0.5 0.25 w_acc_0_25_w_fair_0_5_w_stab_0_25 200 dh3553"
     "case_studies_exp diabetes cs3 4 0.25 0.25 0.5 w_acc_0_25_w_fair_0_25_w_stab_0_5 200 dh3553"
 
-    "case_studies_exp diabetes cs3 5 0.33 0.33 0.33 w_acc_0_33_w_fair_0_33_w_stab_0_33 200 dh3553"
+#    "case_studies_exp diabetes cs3 5 0.33 0.33 0.33 w_acc_0_33_w_fair_0_33_w_stab_0_33 200 dh3553"
     "case_studies_exp diabetes cs3 5 0.5 0.25 0.25 w_acc_0_5_w_fair_0_25_w_stab_0_25 200 dh3553"
     "case_studies_exp diabetes cs3 5 0.25 0.5 0.25 w_acc_0_25_w_fair_0_5_w_stab_0_25 200 dh3553"
     "case_studies_exp diabetes cs3 5 0.25 0.25 0.5 w_acc_0_25_w_fair_0_25_w_stab_0_5 200 dh3553"
@@ -80,7 +80,7 @@ do
     template_file="/home/${email}/projects/virny-flow-experiments/cluster/${exp_name}/virny-flow-${dataset}-${case_study}-template.sbatch"
 
     # Define the output file name
-    output_file="/home/${email}/projects/virny-flow-experiments/cluster/${exp_name}/sbatch_files/${exp_name}_${dataset}_${case_study}_${exp_config_suffix}_run_${run_num}_${index}.sbatch"
+    output_file="/home/${email}/projects/virny-flow-experiments/cluster/${exp_name}/sbatch_files/${exp_name}_${dataset}_${case_study}_${exp_config_suffix}_run_${run_num}_${index}_$(date +"%Y%m%d%H%M%S").sbatch"
 
     # Create an empty file
     touch $output_file

@@ -9,8 +9,6 @@ NYU HPC dashboard -- [https://ood-4.hpc.nyu.edu/pun/sys/dashboard](https://ood-4
 
 Start a VirnyFlow cluster in one SLURM job:
 ```shell
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
-
 pip install -r requirements.txt
 
 # Step 1: Create a sbatch file with all arguments, similar to virny-flow-experiments/cluster/cost_model_exp1/run-cost-model-exp1.sbatch
