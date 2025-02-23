@@ -4,8 +4,8 @@
 # Define SLURM configs
 # ====================================================================================
 #SBATCH --nodes=1
-#SBATCH --mem=96GB
-#SBATCH --cpus-per-task=36
+#SBATCH --mem=24GB
+#SBATCH --cpus-per-task=12
 #SBATCH --time=48:00:00
 #SBATCH --mail-type=END
 #SBATCH --mail-user=<EMAIL>@nyu.edu
