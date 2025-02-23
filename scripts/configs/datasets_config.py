@@ -1,5 +1,5 @@
 from virny.datasets import (DiabetesDataset2019, GermanCreditDataset, ACSEmploymentDataset, ACSIncomeDataset,
-                            LawSchoolDataset, CardiovascularDiseaseDataset)
+                            LawSchoolDataset, CardiovascularDiseaseDataset, ACSPublicCoverageDataset)
 
 
 DATASET_CONFIG = {
@@ -23,6 +23,12 @@ DATASET_CONFIG = {
         "data_loader": ACSIncomeDataset,
         "data_loader_kwargs": {"state": ['GA'], "year": 2018, "with_nulls": False,
                                "subsample_size": 15_000, "subsample_seed": 42},
+        "test_set_fraction": 0.2,
+    },
+    "folk_pubcov": {
+        "data_loader": ACSPublicCoverageDataset,
+        "data_loader_kwargs": {"state": ['NY'], "year": 2018, "with_nulls": False,
+                               "subsample_size": 50_000, "subsample_seed": 42},
         "test_set_fraction": 0.2,
     },
     "law_school": {
