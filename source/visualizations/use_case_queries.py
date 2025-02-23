@@ -1,5 +1,4 @@
 import pandas as pd
-from duckdb import query as sqldf
 
 from virny_flow.configs.constants import PHYSICAL_PIPELINE_OBSERVATIONS_TABLE, ALL_EXPERIMENT_METRICS_TABLE
 from virny_flow.core.custom_classes.core_db_client import CoreDBClient

@@ -1,6 +1,5 @@
 import os
 import json
-import pathlib
 from openbox import History
 from datetime import datetime
 from ConfigSpace import ConfigurationSpace
@@ -35,16 +34,16 @@ def load_history(filename: str, config_space: ConfigurationSpace, defined_object
 
 if __name__ == '__main__':
     # Input variables
-    exp_config_name = 'case_studies_exp_diabetes_cs3_w_acc_0_25_w_fair_0_5_w_stab_0_25'
+    exp_config_name = 'case_studies_exp_diabetes_cs2_w_acc_0_5_w_stab_0_5'
     run_num = 1
     lp_name = 'None&NO_FAIRNESS_INTERVENTION&rf_clf'
-    history_filename = 'history_2024-12-17-08-51-45-766535.json'
+    history_filename = 'history_2024-12-17-08-16-55-433005.json'
     max_trials = 200
 
     defined_objectives = [
-        { "name": "objective_1", "metric": "F1", "group": "overall", "weight": 0.25 },
-        { "name": "objective_2", "metric": "Equalized_Odds_TPR", "group": "Gender", "weight": 0.5 },
-        { "name": "objective_3", "metric": "Label_Stability", "group": "overall", "weight": 0.25 }
+        { "name": "objective_1", "metric": "F1", "group": "overall", "weight": 0.5 },
+        # { "name": "objective_2", "metric": "Equalized_Odds_TPR", "group": "Gender", "weight": 0.25 },
+        { "name": "objective_2", "metric": "Label_Stability", "group": "overall", "weight": 0.5 }
     ]
     surrogate_model_type = 'gp'  # 'gp' or 'prf'
     bo_advisor_config = BOAdvisorConfig()
