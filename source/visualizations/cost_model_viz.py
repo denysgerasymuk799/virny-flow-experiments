@@ -164,6 +164,7 @@ def create_box_plot_per_dataset_and_all_case_studies(to_plot: pd.DataFrame, exp_
     key_columns = ["exp_config_name", "run_num", "logical_pipeline_uuid", "physical_pipeline_uuid",
                    "model_name", "dataset_name", "logical_pipeline_name"]
     filtered_df = filtered_dfs[0].merge(filtered_dfs[1], on=key_columns, how='inner')
+    print("filtered_df.shape:", filtered_df.shape)
 
     # Create the box plot
     main_plot = alt.Chart(filtered_df).mark_point(

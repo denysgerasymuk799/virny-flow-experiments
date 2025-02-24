@@ -49,7 +49,7 @@ pipeline_args:
   models: ["lr_clf", "rf_clf", "lgbm_clf", "gandalf_clf"]
 
 optimisation_args:
-  ref_point: [0.50, 0.15]
+  ref_point: [0.50, 0.15, 0.15]
   objectives:
     - { name: "objective_1", metric: "F1", group: "overall", weight: <W1> }
     - { name: "objective_2", metric: "Statistical_Parity_Difference", group: "SEX", weight: <W2> }
