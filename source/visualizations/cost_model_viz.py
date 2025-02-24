@@ -138,6 +138,7 @@ def create_box_plot_per_dataset_and_all_case_studies(to_plot: pd.DataFrame, exp_
 
     titles = list()
     filtered_dfs = list()
+    new_metrics = list()
     for idx, metric in enumerate([metric_x, metric_y]):
         metric_group = group_x if idx == 0 else group_y
         if metric_group == 'overall':
@@ -157,24 +158,27 @@ def create_box_plot_per_dataset_and_all_case_studies(to_plot: pd.DataFrame, exp_
             else:
                 metric_title = metric
 
-        filtered_df_for_metric.rename(columns={y_column: metric}, inplace=True)
+            metric_title += f' ({metric_group.lower()})'
+            metric_title = metric_title.replace('rac1p', 'race').replace('gender', 'sex')
+
+        filtered_df_for_metric.rename(columns={y_column: metric_title}, inplace=True)
         filtered_dfs.append(filtered_df_for_metric)
         titles.append(metric_title)
+        new_metrics.append(metric_title)
 
     key_columns = ["exp_config_name", "run_num", "logical_pipeline_uuid", "physical_pipeline_uuid",
                    "model_name", "dataset_name", "logical_pipeline_name"]
     filtered_df = filtered_dfs[0].merge(filtered_dfs[1], on=key_columns, how='inner')
-    print("filtered_df.shape:", filtered_df.shape)
 
     # Create the box plot
     main_plot = alt.Chart(filtered_df).mark_point(
         filled=True,
     ).encode(
-        x=alt.X(f'mean({metric_x}):Q', title=titles[0], scale=alt.Scale(zero=False)),
-        y=alt.Y(f'mean({metric_y}):Q', title=titles[1], scale=alt.Scale(zero=False)),
+        x=alt.X(f'mean({new_metrics[0]}):Q', title=titles[0], scale=alt.Scale(zero=False)),
+        y=alt.Y(f'mean({new_metrics[1]}):Q', title=titles[1], scale=alt.Scale(zero=False)),
         color=alt.Color('exp_config_name:N', title=None),
         size=alt.value(200),
-        tooltip=["exp_config_name:N", f"mean({metric_x}):Q", f"mean({metric_y}):Q"],
+        tooltip=["exp_config_name:N", f"mean({new_metrics[0]}):Q", f"mean({new_metrics[1]}):Q"],
     )
 
     # Error bars for x-axis
@@ -184,8 +188,8 @@ def create_box_plot_per_dataset_and_all_case_studies(to_plot: pd.DataFrame, exp_
         ticks=True,
         thickness=3,
     ).encode(
-        x=alt.X(f'mean({metric_x}):Q', title=titles[0], scale=alt.Scale(zero=False)),
-        y=alt.Y(f'{metric_y}:Q', title=titles[1], scale=alt.Scale(zero=False)),
+        x=alt.X(f'mean({new_metrics[0]}):Q', title=titles[0], scale=alt.Scale(zero=False)),
+        y=alt.Y(f'{new_metrics[1]}:Q', title=titles[1], scale=alt.Scale(zero=False)),
         color=alt.Color('exp_config_name:N', title=None),
     )
 
@@ -196,8 +200,8 @@ def create_box_plot_per_dataset_and_all_case_studies(to_plot: pd.DataFrame, exp_
         ticks=True,
         thickness=3,
     ).encode(
-        x=alt.X(f'{metric_x}:Q', title=titles[0], scale=alt.Scale(zero=False)),
-        y=alt.Y(f'mean({metric_y}):Q', title=titles[1], scale=alt.Scale(zero=False)),
+        x=alt.X(f'{new_metrics[0]}:Q', title=titles[0], scale=alt.Scale(zero=False)),
+        y=alt.Y(f'mean({new_metrics[1]}):Q', title=titles[1], scale=alt.Scale(zero=False)),
         color=alt.Color('exp_config_name:N', title=None),
     )
 
