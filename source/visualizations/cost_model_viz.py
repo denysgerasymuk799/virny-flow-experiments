@@ -124,7 +124,8 @@ def create_box_plot_per_dataset_and_case_study(to_plot: pd.DataFrame, exp_name: 
 
 def create_box_plot_per_dataset_and_all_case_studies(to_plot: pd.DataFrame, exp_name: str, dataset_name: str,
                                                      group_x: str, group_y: str, metric_x: str, metric_y: str,
-                                                     rename_legend_dct: dict, base_font_size: int = 22):
+                                                     rename_legend_dct: dict, with_configs: bool = True,
+                                                     base_font_size: int = 22):
     """
     Creates an Altair box plot for the specified metric from the given DataFrame.
     """
@@ -161,6 +162,7 @@ def create_box_plot_per_dataset_and_all_case_studies(to_plot: pd.DataFrame, exp_
             metric_title += f' ({metric_group.lower()})'
             metric_title = metric_title.replace('rac1p', 'race').replace('gender', 'sex')
 
+        metric_title = metric_title.replace('_', ' ')
         filtered_df_for_metric.rename(columns={y_column: metric_title}, inplace=True)
         filtered_dfs.append(filtered_df_for_metric)
         titles.append(metric_title)
@@ -171,12 +173,13 @@ def create_box_plot_per_dataset_and_all_case_studies(to_plot: pd.DataFrame, exp_
     filtered_df = filtered_dfs[0].merge(filtered_dfs[1], on=key_columns, how='inner')
 
     # Create the box plot
+    sorted_legend = list(sorted(rename_legend_dct.values()))
     main_plot = alt.Chart(filtered_df).mark_point(
         filled=True,
     ).encode(
         x=alt.X(f'mean({new_metrics[0]}):Q', title=titles[0], scale=alt.Scale(zero=False)),
         y=alt.Y(f'mean({new_metrics[1]}):Q', title=titles[1], scale=alt.Scale(zero=False)),
-        color=alt.Color('exp_config_name:N', title=None),
+        color=alt.Color('exp_config_name:N', title=None, sort=sorted_legend),
         size=alt.value(200),
         tooltip=["exp_config_name:N", f"mean({new_metrics[0]}):Q", f"mean({new_metrics[1]}):Q"],
     )
@@ -190,7 +193,7 @@ def create_box_plot_per_dataset_and_all_case_studies(to_plot: pd.DataFrame, exp_
     ).encode(
         x=alt.X(f'mean({new_metrics[0]}):Q', title=titles[0], scale=alt.Scale(zero=False)),
         y=alt.Y(f'{new_metrics[1]}:Q', title=titles[1], scale=alt.Scale(zero=False)),
-        color=alt.Color('exp_config_name:N', title=None),
+        color=alt.Color('exp_config_name:N', title=None, sort=sorted_legend),
     )
 
     # Error bars for y-axis
@@ -202,33 +205,111 @@ def create_box_plot_per_dataset_and_all_case_studies(to_plot: pd.DataFrame, exp_
     ).encode(
         x=alt.X(f'{new_metrics[0]}:Q', title=titles[0], scale=alt.Scale(zero=False)),
         y=alt.Y(f'mean({new_metrics[1]}):Q', title=titles[1], scale=alt.Scale(zero=False)),
-        color=alt.Color('exp_config_name:N', title=None),
+        color=alt.Color('exp_config_name:N', title=None, sort=sorted_legend),
     )
 
     final_chart = (main_plot + error_bars_x + error_bars_y).properties(
         width=400,
         height=400
     )
+    if with_configs:
+        final_chart = (
+            final_chart.configure_legend(
+                titleFontSize=base_font_size + 4,
+                labelFontSize=base_font_size + 2,
+                symbolStrokeWidth=10,
+                labelLimit=500,
+                # columns=3,
+                # orient='top',
+                # direction='horizontal',
+                # titleAnchor='middle',
+            ).configure_view(
+                stroke=None,
+            ).configure_axis(
+                labelFontSize=base_font_size + 4,
+                titleFontSize=base_font_size + 6,
+                labelFontWeight='normal',
+                titleFontWeight='normal',
+            ).configure_title(
+                fontSize=base_font_size + 6,
+            )
+        )
+
+    return final_chart
+
+
+def create_concat_box_plot_per_dataset_and_all_case_studies(to_plot: pd.DataFrame, exp_name: str, dataset_name: str,
+                                                            metric1: str, metric2: str, metric3: str,
+                                                            group1: str, group2: str, group3: str,
+                                                            rename_legend_dct: dict, base_font_size: int = 25):
+    plot_pair1 = create_box_plot_per_dataset_and_all_case_studies(to_plot=to_plot,
+                                                                  exp_name=exp_name,
+                                                                  dataset_name=dataset_name,
+                                                                  metric_x=metric1,
+                                                                  group_x=group1,
+                                                                  metric_y=metric2,
+                                                                  group_y=group2,
+                                                                  rename_legend_dct=rename_legend_dct,
+                                                                  with_configs=False,
+                                                                  base_font_size=base_font_size)
+    plot_pair2 = create_box_plot_per_dataset_and_all_case_studies(to_plot=to_plot,
+                                                                  exp_name=exp_name,
+                                                                  dataset_name=dataset_name,
+                                                                  metric_x=metric1,
+                                                                  group_x=group1,
+                                                                  metric_y=metric3,
+                                                                  group_y=group3,
+                                                                  rename_legend_dct=rename_legend_dct,
+                                                                  with_configs=False,
+                                                                  base_font_size=base_font_size)
+    plot_pair3 = create_box_plot_per_dataset_and_all_case_studies(to_plot=to_plot,
+                                                                  exp_name=exp_name,
+                                                                  dataset_name=dataset_name,
+                                                                  metric_x=metric2,
+                                                                  group_x=group2,
+                                                                  metric_y=metric3,
+                                                                  group_y=group3,
+                                                                  rename_legend_dct=rename_legend_dct,
+                                                                  with_configs=False,
+                                                                  base_font_size=base_font_size)
+
+    # Concatenate box plots
+    main_box_plot = alt.hconcat()
+    main_box_plot |= plot_pair1
+    main_box_plot |= plot_pair2
+    main_box_plot |= plot_pair3
+
     final_chart = (
-        final_chart.configure_legend(
-            titleFontSize=base_font_size + 4,
-            labelFontSize=base_font_size + 2,
+        main_box_plot.configure_legend(
+            titleFontSize=base_font_size,
+            # labelFontSize=base_font_size - 2,
+            labelFontSize=base_font_size,
             symbolStrokeWidth=10,
-            labelLimit=500,
-            # columns=3,
-            # orient='top',
-            # direction='horizontal',
-            # titleAnchor='middle',
+            labelLimit=600,
+            titleLimit=600,
+            columns=3,
+            orient='top',
+            direction='horizontal',
+            titleAnchor='middle',
+            # symbolOffset=-100,
+            # symbolOffset=20,
+            symbolOffset=30,
+        ).configure_facet(
+            spacing=10
         ).configure_view(
-            stroke=None,
+            stroke=None
+        ).configure_header(
+            labelOrient='bottom',
+            labelPadding=5,
+            labelFontSize=base_font_size + 2,
+            titleFontSize=base_font_size + 2,
         ).configure_axis(
             labelFontSize=base_font_size + 4,
             titleFontSize=base_font_size + 6,
+            labelLimit=400,
+            titleLimit=300,
             labelFontWeight='normal',
             titleFontWeight='normal',
-        ).configure_title(
-            fontSize=base_font_size + 6,
         )
     )
-
     return final_chart
