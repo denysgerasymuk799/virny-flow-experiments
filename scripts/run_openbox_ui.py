@@ -1,24 +1,36 @@
-import os
-import json
+import pathlib
 from openbox import History
 from datetime import datetime
 from ConfigSpace import ConfigurationSpace
 from openbox.utils.history import Observation
 
 from virny_flow.configs.structs import BOAdvisorConfig
+from virny_flow.core.utils.common_helpers import read_history_from_db
 from virny_flow.visualizations.viz_utils import build_visualizer, create_config_space
 
 
-def load_history(filename: str, config_space: ConfigurationSpace, defined_objectives: list) -> 'History':
-    if not os.path.exists(filename):
-        raise FileNotFoundError(f'File not found: {filename}')
-    with open(filename, 'r') as f:
-        data = json.load(f)
+def prepare_history(data: dict, config_space: ConfigurationSpace, defined_objectives: list) -> 'History':
+    """
+    Prepare history object from raw data read from the database.
+
+    Args:
+        data (dict): Data read from the database.
+        config_space (ConfigurationSpace): Configuration space object.
+        defined_objectives (list): List of defined objectives.
+
+    Returns:
+        History: History object for visualizer.
+    """
 
     # Get original losses from weighted losses
     for obs in data["observations"]:
-        obs["objectives"] = [obs["objectives"][0] / defined_objectives[0]['weight'],
-                             obs["objectives"][1] / defined_objectives[1]['weight']]
+        if len(defined_objectives) == 3:
+            obs["objectives"] = [obs["objectives"][0] / defined_objectives[0]['weight'],
+                                 obs["objectives"][1] / defined_objectives[1]['weight'],
+                                 obs["objectives"][2] / defined_objectives[2]['weight']]
+        else:
+            obs["objectives"] = [obs["objectives"][0] / defined_objectives[0]['weight'],
+                                 obs["objectives"][1] / defined_objectives[1]['weight']]
 
     global_start_time = data.pop('global_start_time')
     global_start_time = datetime.fromisoformat(global_start_time)
@@ -34,23 +46,26 @@ def load_history(filename: str, config_space: ConfigurationSpace, defined_object
 
 if __name__ == '__main__':
     # Input variables
-    exp_config_name = 'case_studies_exp_diabetes_cs2_w_acc_0_5_w_stab_0_5'
+    exp_config_name = 'case_studies_exp_folk_pubcov_cs2_w_acc_0_5_w_fair_0_5'
+    lp_name = 'None&NO_FAIRNESS_INTERVENTION&lgbm_clf'
     run_num = 1
-    lp_name = 'None&NO_FAIRNESS_INTERVENTION&rf_clf'
-    history_filename = 'history_2024-12-17-08-16-55-433005.json'
-    max_trials = 200
+    max_trials = 100
+    ref_point = [0.50, 0.15]
 
-    defined_objectives = [
-        { "name": "objective_1", "metric": "F1", "group": "overall", "weight": 0.5 },
-        # { "name": "objective_2", "metric": "Equalized_Odds_TPR", "group": "Gender", "weight": 0.25 },
-        { "name": "objective_2", "metric": "Label_Stability", "group": "overall", "weight": 0.5 }
-    ]
-    surrogate_model_type = 'gp'  # 'gp' or 'prf'
+    # Read an experimental config
+    db_secrets_path = pathlib.Path(__file__).parent.joinpath('configs').joinpath('secrets.env')
+
+    # Prepare a History object
     bo_advisor_config = BOAdvisorConfig()
-
     config_space = create_config_space(lp_name)
-    history_path = f'../logs/history/{exp_config_name}/run_num_{str(run_num)}/{lp_name}/' + history_filename
-    history = load_history(history_path, config_space, defined_objectives)
+    raw_history, defined_objectives, surrogate_model_type = read_history_from_db(secrets_path=db_secrets_path,
+                                                                                 exp_config_name=exp_config_name,
+                                                                                 lp_name=lp_name,
+                                                                                 run_num=run_num,
+                                                                                 ref_point=ref_point)
+    history = prepare_history(data=raw_history,
+                              config_space=config_space,
+                              defined_objectives=defined_objectives)
 
     task_info = {
         'advisor_type': 'default',
